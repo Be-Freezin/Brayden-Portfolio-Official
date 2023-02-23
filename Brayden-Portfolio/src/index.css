@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text-primary: #f3f3f3;
+    --text-accent: #ffc466;
+    --text-inverted: #191919;
+
+    --color-bg: #191919;
+    --color-muted: #454545;
+    --color-accent: #f68058;
+    --color-glow: #ffd48e;
+    --color-accent-main: #ffc466;
+
+    --color-hover-game: linear-gradient(
+      to bottom,
+      #9747ff,
+      #be44ea,
+      #d748d7,
+      #e753c6,
+      #f161b8,
+      #fb69a6,
+      #ff7597,
+      #ff828c,
+      #ff9274,
+      #ffad54,
+      #ffcf30,
+      #fdf30b
+    );
+    --color-hover-beer: #ebbb40;
+    --color-hover-pc: #48d7fe;
+    --color-hover-ball: linear-gradient(
+      to bottom,
+      #006bb6,
+      #6c5fbd,
+      #ac48ab,
+      #d92583,
+      #ed174c
+    );
+    --color-hover-music: #ed4c4c;
+    --color-hover-code: #aeca63;
+  }
+  @font-face {
+    font-family: "BiteChalk";
+    src: url("/public/BiteChalk.ttf");
+  }
+  @font-face {
+    font-family: "BiteChalkNormal";
+    src: url("/public/BiteChalkNormal.ttf");
+  }
+  @font-face {
+    font-family: "HandcraftChalkRegular";
+    src: url("/HandcraftChalkRegular.ttf");
+  }
+}
