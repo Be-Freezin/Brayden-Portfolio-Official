@@ -54,4 +54,8 @@
     font-family: "HandcraftChalkRegular";
     src: url("/HandcraftChalkRegular.ttf");
   }
+  h1 {
+    text-shadow: 2px -2px 0 #000, -2px -2px 0 #000, 3px -2px 0 #000,
+      -2px 2px 0 #000;
+  }
 }
