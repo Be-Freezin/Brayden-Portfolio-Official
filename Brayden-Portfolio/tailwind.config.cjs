@@ -28,6 +28,8 @@ module.exports = {
         borderglow: "var(--color-glow)",
         bordermain: "var(--color-accent-main)",
         circleredglow: "#EF9475",
+        mutedglow: "#454545",
+        gamehover: "var(--color-hover-game)",
       },
       boxShadow: {
         "0xl":

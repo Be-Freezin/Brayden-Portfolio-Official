@@ -26,7 +26,7 @@ const Navbar = () => {
 
       <Socials />
       {toggleMenu && (
-        <div className="fixed top-0 left-0 z-40 mx-auto my-0 h-1/2 w-screen flex-row-reverse items-center justify-center bg-skin-bg  py-2">
+        <div className="fixed top-0 left-0 z-40 mx-auto my-0 h-full w-screen flex-row-reverse items-center justify-center border-b-2 border-bordermain bg-skin-bg py-2 ">
           <div className="flex flex-row-reverse items-center justify-between">
             <img
               className="mr-6 cursor-pointer pt-2"
@@ -35,7 +35,6 @@ const Navbar = () => {
               srcset=""
               onClick={() => setToggleMenu(false)}
             />
-            
           </div>
           <ul className="mx-auto my-6 flex h-5/6   w-1/4 flex-col items-center justify-evenly font-bitechalknormal text-skin-base">
             <li className="px-4">About</li>
