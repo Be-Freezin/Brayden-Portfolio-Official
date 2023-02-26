@@ -30,6 +30,10 @@ module.exports = {
         circleredglow: "#EF9475",
         mutedglow: "#454545",
         gamehover: "var(--color-hover-game)",
+        beerhover: "var(--color-hover-beer)",
+        pchover: "var(--color-hover-pc)",
+        musichover: "var(--color-hover-music)",
+        codehover:"var(--color-hover-code)"
       },
       boxShadow: {
         "0xl":

@@ -2,6 +2,7 @@ import { useState } from "react"
 import Navbar from "./components/Navbar/Navbar"
 import Header from "./components/Header/Header"
 import About from "./components/About/About"
+import Skills from "./components/Skills/Skills"
 
 function App() {
   
@@ -17,6 +18,9 @@ function App() {
         </header>
         <section>
           <About />
+        </section>
+        <section>
+          <Skills />
         </section>
       </div>
     </div>
