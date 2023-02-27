@@ -3,9 +3,14 @@ import Form from './Form'
 
 const Contact = () => {
   return (
-    <div id='contact' className='h-screen font-handcraftChalk lg:flex flex flex-col  justify-evenly items-center'>
-        <h3 className='text-9xl text-skin-accent w-96 text-center '>Don't be shy!</h3>
-        <Form />
+    <div
+      id="contact"
+      className="flex  h-screen flex-col items-center  justify-evenly lg:flex-row"
+    >
+      <h3 className="w-96 text-center font-handcraftChalk text-5xl text-skin-accent lg:text-9xl ">
+        Don't be shy!
+      </h3>
+      <Form />
     </div>
   )
 }
