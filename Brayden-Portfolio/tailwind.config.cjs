@@ -29,11 +29,13 @@ module.exports = {
         bordermain: "var(--color-accent-main)",
         circleredglow: "#EF9475",
         mutedglow: "#454545",
+        mainblack: "#191919",
+        mutedtext: "var(--color-muted-text)",
         gamehover: "var(--color-hover-game)",
         beerhover: "var(--color-hover-beer)",
         pchover: "var(--color-hover-pc)",
         musichover: "var(--color-hover-music)",
-        codehover:"var(--color-hover-code)"
+        codehover: "var(--color-hover-code)",
       },
       boxShadow: {
         "0xl":

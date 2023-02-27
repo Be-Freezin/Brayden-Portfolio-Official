@@ -10,6 +10,7 @@
 
     --color-bg: #191919;
     --color-muted: #454545;
+    --color-muted-text: #f3f3f3a6;
     --color-accent: #f68058;
     --color-glow: #ffd48e;
     --color-accent-main: #ffc466;
@@ -57,5 +58,8 @@
   h1 {
     text-shadow: 2px -2px 0 #000, -2px -2px 0 #000, 3px -2px 0 #000,
       -2px 2px 0 #000;
+  }
+  html{
+    scroll-behavior: smooth;
   }
 }

@@ -6,6 +6,12 @@ import Close from "../../assets/icons/close.png"
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    })
+  }
 
   return (
     <div className="flex h-6 flex-row-reverse items-center py-6 lg:flex-row lg:justify-between">
@@ -18,10 +24,18 @@ const Navbar = () => {
       />
 
       <ul className="ml-20  hidden w-1/4   justify-between font-bitechalknormal text-skin-base lg:flex">
-        <li className="px-4">About</li>
-        <li className="px-4">Skills</li>
-        <li className="px-4">Projects</li>
-        <li className="px-4">Contact</li>
+        <li className="px-4">
+          <a href="#about">About</a>
+        </li>
+        <li className="px-4">
+          <a href="#skills">Skills</a>
+        </li>
+        <li className="px-4">
+          <a href="#projects">Projects</a>
+        </li>
+        <li className="px-4">
+          <a href="#contact"> Contact</a>
+        </li>
       </ul>
 
       <Socials />

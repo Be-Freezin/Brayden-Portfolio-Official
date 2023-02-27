@@ -3,7 +3,7 @@ import SkillsContent from './SkillsContent'
 
 const Skills = () => {
   return (
-    <div className='h-screen flex justify-center items-center'>
+    <div id='skills' className='h-screen flex justify-center items-center'>
         <SkillsContent />
     </div>
   )
