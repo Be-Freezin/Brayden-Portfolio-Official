@@ -2,15 +2,23 @@ import React from "react"
 
 const Aboutbio = () => {
   return (
-    <div className="mx-auto lg:mx-0 mb-10 w-1/2 lg:mb-0">
+    <div className="mx-auto mb-10 w-1/2 lg:mx-0 lg:mb-0 lg:text-xl">
       <p className="mx-auto text-center  font-bitechalknormal text-skin-base lg:mx-auto lg:w-3/6 ">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum
+        Hey, I’m Brayden! An ambitious Front End Developer who's been building
+        my web development chops for over a year. Armed with a never-ending
+        curiosity and an insatiable appetite for learning, I’ve been carving my
+        way through the digital jungle!
+      </p>
+      <br />
+      <p className="mx-auto text-center  font-bitechalknormal text-skin-base lg:mx-auto lg:w-3/6 ">
+        Hailing from the land of maple syrup and hockey, I made the move to
+        Chicago from Canada three years ago to be with my significant other.
+        Since then, I have immersed myself in the world of web development,
+        dedicating countless hours to learning and perfecting my craft. I’m
+        eagerly seeking my first role in the industry, ready to put my skills to
+        the test and continue growing as a developer. With a keen eye for detail
+        and enthusiasm for coding, learning and growing, I feel I can be a
+        valuable addition to any team.
       </p>
     </div>
   )

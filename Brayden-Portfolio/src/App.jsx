@@ -5,6 +5,7 @@ import About from "./components/About/About"
 import Skills from "./components/Skills/Skills"
 import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact/Contact"
+import Footer from "./components/Footer/Footer"
 
 function App() {
   const childRef = useRef(null)
@@ -16,24 +17,27 @@ function App() {
   return (
     <div className="App">
       <div className="bg-skin-bg">
-        <nav>
+        <nav className="sticky top-0 z-50 bg-skin-bg">
           <Navbar />
         </nav>
         <header className="h-screen">
           <Header forwardedRef={childRef} />
         </header>
-        <section>
+        <section className="pt-48">
           <About />
         </section>
-        <section>
+        <section className="pt-48">
           <Skills />
         </section>
-        <section>
+        <section className="pt-48">
           <Projects />
         </section>
         <section>
           <Contact />
         </section>
+        <footer className="border-t-2 border-bordermain py-6">
+          <Footer />
+        </footer>
       </div>
     </div>
   )

@@ -11,13 +11,13 @@ const BeerCard = ({ setBeerIsShown, beerIsShown }) => {
       <span>Craft Beer</span>
 
       {beerIsShown && (
-        <div className="absolute bottom-0 right-0 flex h-96 w-64 flex-col  justify-evenly   rounded-md bg-beerhover p-1 text-center shadow-0xl shadow-beerhover">
+        <div className="absolute bottom-0  z-50 flex h-96 w-64 flex-col justify-evenly rounded-md  bg-beerhover   p-1 text-center shadow-0xl shadow-beerhover lg:bottom-0 lg:left-0">
           <div className="flex h-full  w-full flex-col justify-evenly bg-skin-bg ">
             <h2 className="mt-4 border-b-2 pb-4 font-bitechalk text-2xl ">
               Favorite Breweries
             </h2>
             <ul className="flex h-full flex-col justify-evenly text-lg">
-              <li>3 Floyds - Munster-IN</li>
+              <li>3 Floyd's - Munster-IN</li>
               <li>Kilter - Winnipeg, Canada</li>
               <li>Revolution - Chicago, IL</li>
               <li>Off Color Brewing - Chicago, IL</li>

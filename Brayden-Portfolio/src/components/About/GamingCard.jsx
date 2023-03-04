@@ -12,7 +12,7 @@ const GamingCard = ({ setIsShown , isShown}) => {
       <span>Gaming</span>
 
       {isShown && (
-        <div className="absolute bottom-0 right-0 flex h-96 w-64 flex-col  justify-evenly   rounded-md bg-gradient-to-b from-purple-600 via-pink-400 to-yellow-500 p-1 text-center shadow-0xl shadow-mutedglow">
+        <div className="absolute z-50 bottom-0 left-0 lg:bottom-0 lg:right-0 flex h-96 w-64 flex-col  justify-evenly   rounded-md bg-gradient-to-b from-purple-600 via-pink-400 to-yellow-500 p-1 text-center shadow-0xl shadow-mutedglow">
           <div className="flex h-full  w-full flex-col justify-evenly bg-skin-bg ">
             <h2 className="mt-4 border-b-2 pb-4 font-bitechalk text-2xl ">
               What im playing

@@ -62,4 +62,28 @@
   html{
     scroll-behavior: smooth;
   }
+/* ANIMATIONS */
+@keyframes morph {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
+
+}
+
+.animate-morph {
+  animation: morph 4s ease-in-out infinite;
+}
+
+
+/* PARALAX */
+
+
+
+

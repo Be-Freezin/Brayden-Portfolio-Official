@@ -14,7 +14,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex h-6 flex-row-reverse items-center py-6 lg:flex-row lg:justify-between">
+    <div className="  flex h-6 flex-row-reverse items-center py-6 lg:flex-row lg:justify-between">
       <img
         className="mr-6 cursor-pointer lg:hidden"
         src={Hamburger}
@@ -51,10 +51,18 @@ const Navbar = () => {
             />
           </div>
           <ul className="mx-auto my-6 flex h-5/6   w-1/4 flex-col items-center justify-evenly font-bitechalknormal text-skin-base">
-            <li className="px-4">About</li>
-            <li className="px-4">Skills</li>
-            <li className="px-4">Projects</li>
-            <li className="px-4">Contact</li>
+            <li className="px-4">
+              <a href="#about">About</a>
+            </li>
+            <li className="px-4">
+              <a href="#skills">Skills</a>
+            </li>
+            <li className="px-4">
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="px-4">
+              <a href="#contact"> Contact</a>
+            </li>
           </ul>
         </div>
       )}

@@ -1,27 +1,31 @@
 import React from 'react'
 import projectone from '../../assets/project-imgs/code-project.jpg'
-
+import repo from '../../assets/icons/repo.png'
+import livesite from '../../assets/icons/livesite.png'
 const ProjectCard = () => {
   return (
-    <div className="lg:w-1/2 font-bitechalknormal lg:text-xl mx-6">
-      <div className="  rounded-lg bg-skin-accentdark p-6 mt-8 ">
+    <div className="mx-6 font-bitechalknormal text-sm lg:w-1/2 lg:text-xl">
+      <div className="  mt-8 rounded-lg bg-skin-accentdark p-6 ">
         <img
           className="mx-auto w-full rounded-lg border-8 border-mainblack"
           src={projectone}
           alt=""
         />
-        <div className="mt-4 flex lg:w-1/2 justify-between">
-          <span className="border-4 border-mainblack bg-mutedtext p-2">
+        <div className="mt-4 flex items-center justify-between text-center lg:w-1/2">
+          <span className="   px-2 py-2">
             Project 1
           </span>
-          <span className="border-4 border-mainblack bg-mutedtext p-2">
+          <span className=" px-2 py-1">
             HTML + TailwindCSS + React
           </span>
-          <a className="border-4 border-mainblack bg-mutedtext p-2" href="#">
-            Site
+          <a className="  p-2" href="#">
+            <img src={livesite} alt="" srcset="" />
           </a>
-          <a className="border-4 border-mainblack bg-mutedtext p-2" href="#">
-            repo
+          <a
+            className="  p-2 "
+            href="#"
+          >
+            <img className='w-' src={repo} alt="" srcset="" />
           </a>
         </div>
       </div>

@@ -41,6 +41,12 @@ module.exports = {
         "0xl":
           "0 4px 20px -2px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);",
       },
+
+      animation: {
+        morph: "morph 3s ease-in-out infinite;",
+      },
+
+
     },
   },
   plugins: [],
