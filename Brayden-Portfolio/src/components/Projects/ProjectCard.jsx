@@ -5,7 +5,7 @@ import livesite from '../../assets/icons/livesite.png'
 const ProjectCard = () => {
   return (
     <div className="mx-6 font-bitechalknormal text-sm lg:w-1/2 lg:text-xl">
-      <div className="  mt-8 rounded-lg bg-skin-accentdark p-6 ">
+      <div className="  mt-8 rounded-lg bg-skin-accentdark p-6 hidden">
         <img
           className="mx-auto w-full rounded-lg border-8 border-mainblack"
           src={projectone}
@@ -28,6 +28,9 @@ const ProjectCard = () => {
             <img className='w-' src={repo} alt="" srcset="" />
           </a>
         </div>
+      </div>
+      <div className="  mt-8 rounded-lg bg-skin-accentdark p-6 ">
+    <h3>Coming Soon...</h3>
       </div>
     </div>
   )
