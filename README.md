@@ -8,7 +8,10 @@
  *  Make nav bar fixed to top
  <!-- *  reposition the interests hover cards on mobile so they stay within screen -->
  *  reformat our code. The skills, interests, interests cards, and projects are DRY. Make a data.js file for these components so we can map over them. Reducing the amount of times we need to duplicate our code per section.
- *  Add a footer 
+ <!-- *  Add a footer  -->
+
+
+THink of what else do add.
 
 
 

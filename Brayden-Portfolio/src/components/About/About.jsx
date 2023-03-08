@@ -19,5 +19,5 @@ const About = () => {
     </div>
   )
 }
-
+// MAP OVER CARDS
 export default About
