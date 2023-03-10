@@ -4,8 +4,10 @@ import InterestsCards from "./InterestsCards"
 import interestsData from "../../interestsData"
 
 const About = () => {
-
-    
+const [isShown, setIsShown] = useState(false)
+      const interestsElements = interestsData.map(interest => {
+        return <InterestsCards cardtitle={interest.cardtitle} maintitle={interest.maintitle} item={interest.list} key={interest.key} description={interest.description} icon={interest.icon} {...interestsData} />
+      })
 
   return (
     <div id="about" className="flex  h-screen flex-col justify-center ">
@@ -14,7 +16,11 @@ const About = () => {
       </h2>
       <div className="mx-auto mt-16 lg:items-center lg:justify-evenly lg:flex lg:w-5/6 lg:flex-row">
         <Aboutbio />
-        <InterestsCards />
+        <div className="mx-auto  grid w-96  auto-cols-auto auto-rows-auto grid-cols-3 gap-y-5  gap-x-16 p-6">
+
+        {interestsElements}
+        </div>
+        {/* <InterestsCards /> */}
       </div>
     </div>
   )

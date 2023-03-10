@@ -1,7 +1,8 @@
 export default [
   {
     key: 1,
-    title: "Gaming",
+    maintitle: "Gaming",
+    cardtitle: "Gaming",
     icon: "../../assets/icons/gaming.svg",
     list: {
       item1: "Elden Ring",
@@ -12,7 +13,8 @@ export default [
   },
   {
     key: 2,
-    title: "Craft Beer",
+    maintitle: "Craft Beer",
+    cardtitle: "Craft Beer",
     icon: "../../assets/icons/beer.svg",
     list: {
       item1: "3 Floyd's - Munster-IN",
@@ -23,7 +25,8 @@ export default [
   },
   {
     key: 3,
-    title: "My Rig",
+    maintitle: "PC",
+    cardtitle: "My Rig",
     icon: "../../assets/icons/pc.svg",
     list: {
       item1: "CPU - Ryzen 5 5600x",
@@ -36,8 +39,9 @@ export default [
   },
   {
     key: 4,
-    title: "Favorite Teams",
-    icon: "../../assets/icons/basketball.svg",
+    maintitle: "Basketball",
+    cardtitle: "Favorite Teams",
+    icon: "../assets/icons/basketball.svg",
     list: {
       item1: "Philadelphia 76ers",
       item2: "Boston Celtics",
@@ -45,6 +49,7 @@ export default [
   },
   {
     key: 5,
+    maintitle: "Music",
     title: "Favorite Genres",
     icon: "../../assets/icons/music.svg",
     list: {
@@ -59,8 +64,13 @@ export default [
   },
   {
     key: 6,
-    title: "Audio Production",
+    maintitle: "Audio Production",
+    cardtitle: "Audio Production",
     icon: "../../assets/icons/ableton.svg",
-    description:" I've always been fascinated by music, and started playing drums at the age of 14. Over the years i've grown to appreciate various styles of music. For the past several years i've been producing music. Primarily drum and bass but i enjoy making multiple other genres as well."
+    list: {
+      item1:
+        "I've always been fascinated by music, and started playing drums at the age of 14. Over the years i've grown to appreciate various styles of music. For the past several years i've been producing music. Primarily drum and bass but i enjoy making multiple other genres as well.",
+    },
+    // description: " I've always been fascinated by music, and started playing drums at the age of 14. Over the years i've grown to appreciate various styles of music. For the past several years i've been producing music. Primarily drum and bass but i enjoy making multiple other genres as well."
   },
 ]
