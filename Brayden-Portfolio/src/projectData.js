@@ -1,0 +1,32 @@
+export default [
+  {
+    key: 1,
+    name: "Portfolio",
+    languages: ["ReactJS, HTML, TailwindCSS"],
+    sitelink: "www.linkhere.com",
+    repolink: "www.repohere.com",
+    projectimage: "../src/assets/project-imgs/code-project.jpg",
+    siteicon: "../src/assets/icons/livesite.png",
+    repoicon: "../src/assets/icons/repo.png",
+  },
+  {
+    key: 2,
+    name: "Portfolio",
+    languages: ["ReactJS, HTML, TailwindCSS"],
+    sitelink: "www.linkhere.com",
+    repolink: "www.repohere.com",
+    projectimage: "../src/assets/project-imgs/code-project.jpg",
+    siteicon: "../src/assets/icons/livesite.png",
+    repoicon: "../src/assets/icons/repo.png",
+  },
+  {
+    key: 3,
+    name: "Portfolio",
+    languages: ["ReactJS, HTML, TailwindCSS"],
+    sitelink: "www.linkhere.com",
+    repolink: "www.repohere.com",
+    projectimage: "../src/assets/project-imgs/code-project.jpg",
+    siteicon: "../src/assets/icons/livesite.png",
+    repoicon: "../src/assets/icons/repo.png",
+  },
+]

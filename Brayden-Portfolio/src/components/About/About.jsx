@@ -20,7 +20,7 @@ const [isShown, setIsShown] = useState(false)
 
         {interestsElements}
         </div>
-        {/* <InterestsCards /> */}
+        
       </div>
     </div>
   )
