@@ -16,7 +16,7 @@ const [isShown, setIsShown] = useState(false)
       </h2>
       <div className="mx-auto mt-16 lg:items-center lg:justify-evenly lg:flex lg:w-5/6 lg:flex-row">
         <Aboutbio />
-        <div className="mx-auto  grid w-96  auto-cols-auto auto-rows-auto grid-cols-3 gap-y-5  gap-x-16 p-6">
+        <div className="mx-auto  grid w-96  auto-cols-auto auto-rows-auto grid-cols-3  gap-y-5  gap-x-16 p-6">
 
         {interestsElements}
         </div>

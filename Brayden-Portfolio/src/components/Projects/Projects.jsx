@@ -8,15 +8,20 @@ const Projects = () => {
     return <ProjectCard name={project.name} languages={project.languages} site={project.site} code={project.repo} siteicon={project.siteicon} repoicon={project.repoicon}/>
   })
 
+
+
   return (
     <div
       id="projects"
-      className="flex h-screen flex-col items-center justify-center"
+      className={"flex h-fit flex-col items-center justify-center  "}
     >
       <h3 className="mx-auto font-handcraftChalk text-5xl text-skin-accent lg:mb-20 lg:text-8xl">
         Projects
       </h3>
-      <div className='flex'> {projectcard}</div>
+      <div className="mx-auto grid lg:grid-cols-2 place-items-center ">
+        {" "}
+        {projectcard}
+      </div>
     </div>
   )
 }

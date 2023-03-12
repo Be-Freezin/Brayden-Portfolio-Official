@@ -11,7 +11,7 @@ const ProjectCard = ({name, languages, site, siteicon, repoicon,  code}) => {
           src={projectone}
           alt=""
         />
-        <div className="mt-4 flex items-center justify-between text-center lg:w-1/2">
+        <div className="mt-4 flex items-center justify-between text-center lg:w-full">
           <span className="   px-2 py-2">
             {name}
           </span>

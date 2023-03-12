@@ -25,16 +25,25 @@ const Navbar = () => {
 
       <ul className="ml-20  hidden w-1/4   justify-between font-bitechalknormal text-skin-base lg:flex">
         <li className="px-4">
-          <a href="#about">About</a>
+          <a href="#about" className="hover:text-skin-accent ">
+            About
+          </a>
         </li>
         <li className="px-4">
-          <a href="#skills">Skills</a>
+          <a href="#skills" className="hover:text-skin-accent ">
+            Skills
+          </a>
         </li>
         <li className="px-4">
-          <a href="#projects">Projects</a>
+          <a href="#projects" className="hover:text-skin-accent ">
+            Projects
+          </a>
         </li>
         <li className="px-4">
-          <a href="#contact"> Contact</a>
+          <a href="#contact" className="hover:text-skin-accent ">
+            {" "}
+            Contact
+          </a>
         </li>
       </ul>
 
@@ -52,16 +61,18 @@ const Navbar = () => {
           </div>
           <ul className="mx-auto my-6 flex h-5/6   w-1/4 flex-col items-center justify-evenly font-bitechalknormal text-skin-base">
             <li className="px-4">
-              <a href="#about">About</a>
+              <a href="#about" onClick={() => setToggleMenu(false)}>
+                About
+              </a>
             </li>
             <li className="px-4">
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={() => setToggleMenu(false)}>Skills</a>
             </li>
             <li className="px-4">
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={() => setToggleMenu(false)}>Projects</a>
             </li>
             <li className="px-4">
-              <a href="#contact"> Contact</a>
+              <a href="#contact" onClick={() => setToggleMenu(false)}> Contact</a>
             </li>
           </ul>
         </div>

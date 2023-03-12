@@ -17,7 +17,7 @@ return (
     </div>
 
     {isShown && (
-      <div className="absolute bottom-0  z-50 flex h-96 w-64 flex-col justify-evenly rounded-md  bg-beerhover   p-1 text-center shadow-0xl shadow-beerhover lg:bottom-0 lg:left-0">
+      <div className={"absolute translate-x-2/4 translate-y-2/4 bottom-2/4 right-1/2   mx-auto z-50 flex h-96 w-64 flex-col justify-evenly rounded-md  bg-beerhover   p-1 text-center shadow-0xl shadow-beerhover lg:bottom-0 lg:left-0 lg:right-0 lg:translate-x-0 lg:translate-y-0"}>
         <div className="flex h-full  w-full flex-col justify-evenly bg-skin-bg ">
           <h2 className="mt-4 border-b-2 pb-4 font-bitechalk text-2xl ">
             {cardtitle}
