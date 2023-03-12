@@ -4,7 +4,7 @@ import projectone from '../../assets/project-imgs/code-project.jpg'
 // import livesite from '../../assets/icons/livesite.png'
 const ProjectCard = ({name, languages, site, siteicon, repoicon,  code}) => {
   return (
-    <div className="mx-6 font-bitechalknormal text-sm lg:w-1/2 lg:text-xl">
+    <div className="mx-6  font-bitechalknormal text-sm lg:w-1/2 lg:text-xl">
       <div className="  mt-8 rounded-lg bg-skin-accentdark p-6">
         <img
           className="mx-auto w-full rounded-lg border-8 border-mainblack"

@@ -9,11 +9,14 @@ const Projects = () => {
   })
 
   return (
-    <div id='projects' className="flex h-screen flex-col items-center justify-center">
+    <div
+      id="projects"
+      className="flex h-screen flex-col items-center justify-center"
+    >
       <h3 className="mx-auto font-handcraftChalk text-5xl text-skin-accent lg:mb-20 lg:text-8xl">
         Projects
       </h3>
-      {projectcard}
+      <div className='flex'> {projectcard}</div>
     </div>
   )
 }
