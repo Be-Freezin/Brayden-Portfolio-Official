@@ -41,7 +41,6 @@ const Navbar = () => {
         </li>
         <li className="px-4">
           <a href="#contact" className="hover:text-skin-accent ">
-            {" "}
             Contact
           </a>
         </li>

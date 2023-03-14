@@ -6,7 +6,7 @@ import interestsData from "../../interestsData"
 const About = () => {
 const [isShown, setIsShown] = useState(false)
       const interestsElements = interestsData.map(interest => {
-        return <InterestsCards cardtitle={interest.cardtitle} maintitle={interest.maintitle} item={interest.list} key={interest.key} description={interest.description} icon={interest.icon} {...interestsData} />
+        return <InterestsCards cardtitle={interest.cardtitle} maintitle={interest.maintitle} item={interest.list} index={interest.key} description={interest.description} icon={interest.icon}  />
       })
 
   return (
