@@ -12,7 +12,7 @@ const InterestsCards = ({ cardtitle, item, maintitle, icon, index }) => {
       onMouseLeave={() => setIsShown(false)}
     >
       <div className="mx-auto flex h-full w-full flex-col justify-between text-center  ">
-        <img className="my-2 mx-auto w-6" src={icon} alt="" srcset="" />
+        <img className="my-2 mx-auto w-6" src={icon} alt="" srcSet="" />
         <span className=" my-0  mx-auto ">{maintitle}</span>
       </div>
       {isShown && (
@@ -41,7 +41,6 @@ const InterestsCards = ({ cardtitle, item, maintitle, icon, index }) => {
               <li>{item.item6}</li>
             </ul>
           </div>
-      
         </div>
       )}
     </div>
@@ -50,4 +49,3 @@ const InterestsCards = ({ cardtitle, item, maintitle, icon, index }) => {
 export default InterestsCards
 
 // WORK ON CONDITIONAL CSS FOR THE CARDS
-

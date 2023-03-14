@@ -19,7 +19,7 @@ const Navbar = () => {
         className="mr-6 cursor-pointer lg:hidden"
         src={Hamburger}
         alt="Hamburger Icon "
-        srcset=""
+        srcSet=""
         onClick={() => setToggleMenu(true)}
       />
 
@@ -54,7 +54,7 @@ const Navbar = () => {
               className="mr-6 cursor-pointer pt-2"
               src={Close}
               alt=""
-              srcset=""
+              srcSet=""
               onClick={() => setToggleMenu(false)}
             />
           </div>
@@ -65,13 +65,20 @@ const Navbar = () => {
               </a>
             </li>
             <li className="px-4">
-              <a href="#skills" onClick={() => setToggleMenu(false)}>Skills</a>
+              <a href="#skills" onClick={() => setToggleMenu(false)}>
+                Skills
+              </a>
             </li>
             <li className="px-4">
-              <a href="#projects" onClick={() => setToggleMenu(false)}>Projects</a>
+              <a href="#projects" onClick={() => setToggleMenu(false)}>
+                Projects
+              </a>
             </li>
             <li className="px-4">
-              <a href="#contact" onClick={() => setToggleMenu(false)}> Contact</a>
+              <a href="#contact" onClick={() => setToggleMenu(false)}>
+                {" "}
+                Contact
+              </a>
             </li>
           </ul>
         </div>

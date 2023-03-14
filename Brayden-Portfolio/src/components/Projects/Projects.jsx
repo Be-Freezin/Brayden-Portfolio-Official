@@ -1,14 +1,21 @@
-import React from 'react'
-import ProjectCard from './ProjectCard'
-import projectData from '../../projectData'
+import React from "react"
+import ProjectCard from "./ProjectCard"
+import projectData from "../../projectData"
 
 const Projects = () => {
-
-  const projectcard = projectData.map(project => {
-    return <ProjectCard name={project.name} languages={project.languages} site={project.site} code={project.repo} siteicon={project.siteicon} repoicon={project.repoicon}/>
+  const projectcard = projectData.map((project) => {
+    return (
+      <ProjectCard
+        name={project.name}
+        languages={project.languages}
+        site={project.site}
+        code={project.repo}
+        siteicon={project.siteicon}
+        repoicon={project.repoicon}
+        key={project.key}
+      />
+    )
   })
-
-
 
   return (
     <div
@@ -18,8 +25,7 @@ const Projects = () => {
       <h3 className="mx-auto font-handcraftChalk text-5xl text-skin-accent lg:mb-20 lg:text-8xl">
         Projects
       </h3>
-      <div className="mx-auto grid lg:grid-cols-2 place-items-center ">
-        {" "}
+      <div className="mx-auto grid place-items-center lg:grid-cols-2 ">
         {projectcard}
       </div>
     </div>

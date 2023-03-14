@@ -26,7 +26,7 @@ const Headercontent = () => {
         className="mx-auto mt-36 animate-bounce w-14 "
         src={Arrow}
         alt=""
-        srcset=""
+        srcSet=""
       />
     </div>
   )
