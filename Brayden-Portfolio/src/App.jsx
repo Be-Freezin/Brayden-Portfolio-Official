@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <div className="bg-skin-bg">
-        <nav className="sticky top-0 z-50 bg-skin-bg">
+        <nav className="sticky py-4 top-0 z-50 bg-skin-bg">
           <Navbar />
         </nav>
         <header className="h-screen">
