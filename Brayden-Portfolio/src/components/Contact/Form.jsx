@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react"
-import emailjs from '@emailjs/browser'
+import emailjs from "@emailjs/browser"
 const Form = () => {
   const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   })
 
@@ -41,22 +41,26 @@ const Form = () => {
   }
 
   return (
-    <form className=" font-bitechalknormal" ref={contactForm} onSubmit={handleSubmit}>
+    <form
+      className=" font-bitechalknormal"
+      ref={contactForm}
+      onSubmit={handleSubmit}
+    >
       <div className=" mx-auto  flex-col items-center  justify-evenly text-skin-base ">
         <input
           type="text"
           placeholder="Name"
           onChange={handleChange}
-          name="fullName"
-          value={formData.fullName}
+          name="user_name"
+          value={formData.user_name}
           className="mx-auto mb-6 block w-48 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-96 lg:text-2xl"
         />
         <input
           type="text"
           placeholder="Email Address"
           onChange={handleChange}
-          name="email"
-          value={formData.email}
+          name="user_email"
+          value={formData.user_email}
           className="mx-auto mb-6 block w-48 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-96 lg:text-2xl"
         />
         <textarea
