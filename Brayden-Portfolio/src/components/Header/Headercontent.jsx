@@ -23,7 +23,7 @@ const Headercontent = () => {
       </div>
       {/* END GLOW BOX */}
       <img
-        className="mx-auto mt-36 animate-bounce w-14 "
+        className="mx-auto mt-36 w-14 animate-bounce "
         src={Arrow}
         alt=""
         srcSet=""
@@ -32,6 +32,6 @@ const Headercontent = () => {
   )
 }
 
-//! WORK ON FURTHER RESPONSIVENESS 
+//! WORK ON FURTHER RESPONSIVENESS
 
 export default Headercontent

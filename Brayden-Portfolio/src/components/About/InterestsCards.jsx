@@ -32,7 +32,7 @@ const InterestsCards = ({ cardtitle, item, maintitle, icon, index }) => {
               {cardtitle}
             </h2>
 
-            <ul className="flex h-full flex-col justify-evenly text-lg p-4 ">
+            <ul className="flex h-full flex-col justify-evenly p-4 text-lg ">
               <li>{item.item1}</li>
               <li>{item.item2}</li>
               <li>{item.item3}</li>

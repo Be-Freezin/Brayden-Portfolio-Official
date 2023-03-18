@@ -71,7 +71,7 @@ const Form = () => {
           className="mx-auto mb-6 block h-64 w-48 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-96 lg:text-2xl"
         />
         <button
-          className="mx-auto block w-48 rounded-md border-2 border-bordermain px-8 py-2 text-skin-base lg:w-96 lg:py-4 lg:text-2xl"
+          className="mx-auto block w-48 rounded-md border-2 border-bordermain px-8 py-2 text-skin-base lg:w-96 lg:py-4 lg:text-2xl hover:bg-skin-accent hover:text-skin-inverted"
           type="submit"
           onClick={handleSubmit}
         >
