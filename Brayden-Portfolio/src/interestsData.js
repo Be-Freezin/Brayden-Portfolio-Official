@@ -3,7 +3,7 @@ export default [
     key: 1,
     maintitle: "Gaming",
     cardtitle: "What im Playing",
-    icon: "../src/assets/site-icons/gaming.svg",
+    icon: "/site-icons/gaming.svg",
     list: {
       item1: "Elden Ring",
       item2: "Divinity: Original Sin 2",
@@ -17,7 +17,7 @@ export default [
     key: 2,
     maintitle: "Craft Beer",
     cardtitle: "Favorite Breweries",
-    icon: "../src/assets/site-icons/beer.svg",
+    icon: "/site-icons/beer.svg",
     list: {
       item1: "3 Floyd's - Munster-IN",
       item2: "Kilter - Winnipeg, Canada",
@@ -31,7 +31,7 @@ export default [
     key: 3,
     maintitle: "PC",
     cardtitle: "My Rig",
-    icon: "../src/assets/site-icons/pc.svg",
+    icon: "/site-icons/pc.svg",
     list: {
       item1: "CPU - Ryzen 5 5600x",
       item2: "GPU - ROG Strix rtx 2080oc",
@@ -45,7 +45,7 @@ export default [
     key: 4,
     maintitle: "Basketball",
     cardtitle: "Favorite Teams/Players",
-    icon: "../src/assets/site-icons/basketball.svg",
+    icon: "/site-icons/basketball.svg",
     list: {
       item1: "Philadelphia 76ers",
       item2: "Boston Celtics",
@@ -59,7 +59,7 @@ export default [
     key: 5,
     maintitle: "Music",
     cardtitle: "Favorite Genres",
-    icon: "../src/assets/site-icons/music.svg",
+    icon: "/site-icons/music.svg",
     list: {
       item1: "90's Hip-Hop",
       item2: "Death Metal",
@@ -74,7 +74,7 @@ export default [
     key: 6,
     maintitle: "Audio",
     cardtitle: "Audio Production",
-    icon: "../src/assets/site-icons/ableton.svg",
+    icon: "/site-icons/ableton.svg",
     list: {
       item1:
         "I've always been fascinated by music, and started playing drums at the age of 14. Over the years i've grown to appreciate various styles of music. For the past several years i've been producing music. Primarily drum and bass but i enjoy making multiple other genres as well.",
