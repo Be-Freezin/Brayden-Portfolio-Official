@@ -1,5 +1,5 @@
 import React from "react"
-import Arrow from "../../assets/icons/arrowdown.png"
+import Arrow from "../../assets/site-icons/arrowdown.png"
 const Headercontent = () => {
   return (
     <div className="mx-auto flex h-screen flex-col items-center justify-center ">

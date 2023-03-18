@@ -1,12 +1,12 @@
 import React from 'react'
-import vscode from '../../assets/icons/vscode.png'
-import tailwind from '../../assets/icons/tailwind.png'
-import react from '../../assets/icons/react.png'
-import javascript from '../../assets/icons/javascript.png' 
-import html from '../../assets/icons/html.png'
-import gitcircle from '../../assets/icons/git-circle.png'
-import figma from '../../assets/icons/figma.png'
-import css from '../../assets/icons/css.png'
+import vscode from '../../assets/site-icons/vscode.png'
+import tailwind from '../../assets/site-icons/tailwind.png'
+import react from '../../assets/site-icons/react.png'
+import javascript from '../../assets/site-icons/javascript.png' 
+import html from '../../assets/site-icons/html.png'
+import gitcircle from '../../assets/site-icons/git-circle.png'
+import figma from '../../assets/site-icons/figma.png'
+import css from '../../assets/site-icons/css.png'
 
 const SkillsContent = () => {
   return (

@@ -6,8 +6,8 @@ export default [
     sitelink: "www.linkhere.com",
     repolink: "www.repohere.com",
     projectimage: "../src/assets/project-imgs/code-project.jpg",
-    siteicon: "../src/assets/icons/livesite.png",
-    repoicon: "../src/assets/icons/repo.png",
+    siteicon: "../src/assets/site-icons/livesite.png",
+    repoicon: "../src/assets/site-icons/repo.png",
   },
   {
     key: 2,
@@ -16,8 +16,8 @@ export default [
     sitelink: "www.linkhere.com",
     repolink: "www.repohere.com",
     projectimage: "../src/assets/project-imgs/code-project.jpg",
-    siteicon: "../src/assets/icons/livesite.png",
-    repoicon: "../src/assets/icons/repo.png",
+    siteicon: "../src/assets/site-icons/livesite.png",
+    repoicon: "../src/assets/site-icons/repo.png",
   },
   {
     key: 3,
@@ -26,8 +26,8 @@ export default [
     sitelink: "www.linkhere.com",
     repolink: "www.repohere.com",
     projectimage: "../src/assets/project-imgs/code-project.jpg",
-    siteicon: "../src/assets/icons/livesite.png",
-    repoicon: "../src/assets/icons/repo.png",
+    siteicon: "../src/assets/site-icons/livesite.png",
+    repoicon: "../src/assets/site-icons/repo.png",
   },
   {
     key: 4,
@@ -36,7 +36,7 @@ export default [
     sitelink: "www.linkhere.com",
     repolink: "www.repohere.com",
     projectimage: "../src/assets/project-imgs/code-project.jpg",
-    siteicon: "../src/assets/icons/livesite.png",
-    repoicon: "../src/assets/icons/repo.png",
+    siteicon: "../src/assets/site-icons/livesite.png",
+    repoicon: "../src/assets/site-icons/repo.png",
   },
 ]

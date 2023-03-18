@@ -1,7 +1,7 @@
 import React from "react"
-import Git from "../../assets/icons/git.png"
-import Download from "../../assets/icons/download.png"
-import Linkedin from "../../assets/icons/linkedin.png"
+import Git from "../../assets/site-icons/git.png"
+import Download from "../../assets/site-icons/download.png"
+import Linkedin from "../../assets/site-icons/linkedin.png"
 
 const Navsocials = () => {
   return (

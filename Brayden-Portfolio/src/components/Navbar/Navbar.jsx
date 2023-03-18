@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 
 import Socials from "./Navsocials"
-import Hamburger from "../../assets/icons/hamburger.png"
-import Close from "../../assets/icons/close.png"
+import Hamburger from "../../assets/site-icons/hamburger.png"
+import Close from "../../assets/site-icons/close.png"
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
