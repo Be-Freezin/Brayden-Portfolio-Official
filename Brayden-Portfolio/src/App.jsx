@@ -10,9 +10,7 @@ import Footer from "./components/Footer/Footer"
 function App() {
   const childRef = useRef(null)
 
-  // useEffect(() => {
-  //   console.log(childRef.current)
-  // }, [])
+
 
   return (
     <div className="App">
