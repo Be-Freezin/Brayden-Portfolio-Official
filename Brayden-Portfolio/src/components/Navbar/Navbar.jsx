@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import Socials from "./Navsocials"
 import Hamburger from "../../assets/site-icons/hamburger.png"
 import Close from "../../assets/site-icons/close.png"
+import Logo from '/public/BF-Logo.svg'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -23,7 +24,12 @@ const Navbar = () => {
         onClick={() => setToggleMenu(true)}
       />
 
-      <ul className="ml-20  hidden w-1/4 justify-between   font-bitechalknormal text-lg text-skin-base lg:flex">
+      <ul className="ml-20  hidden w-1/4 justify-between items-center   font-bitechalknormal text-lg text-skin-base lg:flex">
+        <li className="px-4">
+          <a href="#home" className="hover:text-skin-accent ">
+            <img className="w-10" src={Logo} alt="" />
+          </a>
+        </li>
         <li className="px-4">
           <a href="#about" className="hover:text-skin-accent ">
             About

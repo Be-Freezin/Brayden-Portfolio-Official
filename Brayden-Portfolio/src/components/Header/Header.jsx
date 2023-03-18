@@ -3,7 +3,7 @@ import Headercontent from './Headercontent'
 
 const Header = () => {
   return (
-    <section>
+    <section id='home'>
         <Headercontent />
        
     </section>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167.54 168.29">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #231f20;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: BlackOrchestra, 'Black Orchestra';
+        font-size: 88px;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-4 {
+        fill: #fbb040;
+      }
+
+      .cls-2 {
+        fill: #c2b59b;
+      }
+
+      .cls-3 {
+        fill: #231f20;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #fbb040;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="1.5" y="1.5" width="164.24" height="164.24" rx="31.37" ry="31.37"/>
+  <g>
+    <g>
+      <text class="cls-2" transform="translate(48.52 122.73)"><tspan x="0" y="0">B</tspan></text>
+      <text class="cls-1" transform="translate(45.78 123.52)"><tspan x="0" y="0">B</tspan></text>
+    </g>
+    <g>
+      <text class="cls-2" transform="translate(124.83 127.31) rotate(-180) scale(1 -1)"><tspan x="0" y="0">F</tspan></text>
+      <text class="cls-1" transform="translate(126.29 128.81) rotate(-180) scale(1 -1)"><tspan x="0" y="0">F</tspan></text>
+    </g>
+  </g>
+  <line class="cls-4" x1="42.16" y1="1.5" x2="1.5" y2="42.82"/>
+  <line class="cls-4" x1="166.47" y1="125.02" x2="125.81" y2="166.34"/>
+</svg>
