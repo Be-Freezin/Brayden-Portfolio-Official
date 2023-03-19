@@ -1,6 +1,13 @@
 import React, { useState, useRef } from "react"
 import emailjs from "@emailjs/browser"
+
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
+
 const Form = () => {
+const success = () => toast("Message sent successfully!")
+const fail = () => toast("Uh oh! Something went wrong!")
+
   const [formData, setFormData] = useState({
     user_name: "",
     user_email: "",
@@ -31,9 +38,11 @@ const Form = () => {
       .then(
         (result) => {
           // show the user a success message
+          success()
         },
         (error) => {
           // show the user an error
+          fail()
         }
       )
 
@@ -71,13 +80,25 @@ const Form = () => {
           className="mx-auto mb-6 block h-64 w-48 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-96 lg:text-2xl"
         />
         <button
-          className="mx-auto block w-48 rounded-md border-2 border-bordermain px-8 py-2 text-skin-base lg:w-96 lg:py-4 lg:text-2xl hover:bg-skin-accent hover:text-skin-inverted"
+          className="mx-auto block w-48 rounded-md border-2 border-bordermain px-8 py-2 text-skin-base transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:animate-morph hover:bg-skin-accent hover:text-skin-inverted lg:w-96 lg:py-4 lg:text-2xl"
           type="submit"
           onClick={handleSubmit}
         >
           Send!
         </button>
       </div>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </form>
   )
 }
