@@ -5,7 +5,7 @@ const InterestsCards = ({ cardtitle, item, maintitle, icon, index }) => {
 
   return (
     <div
-      className="relative flex h-20 w-20 flex-col items-center justify-center rounded-md p-2 font-bitechalknormal text-sm text-skin-base  shadow-0xl shadow-mutedglow "
+      className="relative flex h-20 w-20 flex-col items-center justify-center rounded-md p-2 bg-skin-bg font-bitechalknormal text-sm text-skin-base  shadow-0xl shadow-mutedglow "
       index={index}
       key="id"
       onMouseEnter={() => setIsShown(true)}

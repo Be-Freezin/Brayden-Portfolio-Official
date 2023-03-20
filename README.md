@@ -1,4 +1,4 @@
-# Braydens Portfolio { color: red; }
+# Braydens Portfolio 
 
  This is my first personal portfolio. Dedicated to highlight and showcase current and future projects to potential employers and customers.
  Coming from a non traditional background while trying to break into tech, i feel having a portfolio to show that I have obtained the knowledge and skills to be successful in a career change.

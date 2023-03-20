@@ -21,7 +21,7 @@ function App() {
         <header className="h-screen">
           <Header forwardedRef={childRef} />
         </header>
-        <section className="pt-48">
+        <section className="pt-48 ">
           <About />
         </section>
         <section className="pt-48">
