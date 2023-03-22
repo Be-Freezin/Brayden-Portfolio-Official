@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="bg-skin-bg">
+      <div className="bg-skin-bg ">
         <nav className="sticky py-4 top-0 z-50 bg-skin-bg">
           <Navbar />
         </nav>
