@@ -30,8 +30,8 @@ const Projects = () => {
 				{projectcard}
 			</div>
 			<div className="  mt-8 rounded-lg bg-skin-accentdark p-6 ">
-    <h3>More are on the way...</h3>
-      </div>
+				<h3 className="font-bitechalknormal">More are on the way...</h3>
+			</div>
 		</div>
 	)
 }
