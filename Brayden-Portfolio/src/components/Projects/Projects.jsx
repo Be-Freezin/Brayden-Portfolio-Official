@@ -8,28 +8,32 @@ const Projects = () => {
       <ProjectCard
         name={project.name}
         languages={project.languages}
-        site={project.site}
-        code={project.repo}
+        site={project.sitelink}
+        code={project.repolink}
         siteicon={project.siteicon}
         repoicon={project.repoicon}
+        projectimg={project.projectimage}
         key={project.key}
       />
     )
   })
 
   return (
-    <div
-      id="projects"
-      className={"flex h-fit flex-col items-center justify-center  "}
-    >
-      <h3 className="mx-auto font-handcraftChalk text-5xl text-skin-accent lg:mb-20 lg:text-8xl">
-        Projects
-      </h3>
-      <div className="mx-auto grid place-items-center lg:grid-cols-2 ">
-        {projectcard}
+		<div
+			id="projects"
+			className={'flex h-fit flex-col items-center justify-center  '}
+		>
+			<h3 className="mx-auto font-handcraftChalk text-5xl text-skin-accent lg:mb-20 lg:text-8xl">
+				Projects
+			</h3>
+			<div className="mx-auto grid place-items-center lg:grid-cols-2 ">
+				{projectcard}
+			</div>
+			<div className="  mt-8 rounded-lg bg-skin-accentdark p-6 ">
+    <h3>More are on the way...</h3>
       </div>
-    </div>
-  )
+		</div>
+	)
 }
 
 export default Projects
