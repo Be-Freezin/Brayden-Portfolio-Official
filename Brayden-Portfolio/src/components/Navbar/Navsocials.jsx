@@ -1,12 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Git from '../../assets/site-icons/git.png'
 import Download from '../../assets/site-icons/download.png'
 import Linkedin from '../../assets/site-icons/linkedin.png'
 
+
 const Navsocials = () => {
+	
 	return (
-		<div className="flex mr-40 lg:mr-20 lg:flex">
-			<a href="#">
+		<div className="mr-40 flex lg:mr-20 lg:flex">
+			<a href="#" >
 				<img
 					className="px-4 hover:animate-pulse"
 					src={Download}
@@ -14,7 +16,12 @@ const Navsocials = () => {
 					srcSet=""
 				/>
 			</a>
-			<a href="https://github.com/Be-Freezin" target="_blank">
+
+			<a
+				href="https://github.com/Be-Freezin"
+				target="_blank"
+				
+			>
 				<img
 					className="px-4 hover:animate-pulse"
 					src={Git}
@@ -30,6 +37,7 @@ const Navsocials = () => {
 					srcSet=""
 				/>
 			</a>
+			
 		</div>
 	)
 }
