@@ -46,7 +46,7 @@ const fail = () => toast("Uh oh! Something went wrong!")
         }
       )
 
-    console.log(formData)
+    
   }
 
   return (

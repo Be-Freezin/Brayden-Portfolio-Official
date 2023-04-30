@@ -2,13 +2,14 @@ import React, {useState} from 'react'
 import Git from '../../assets/site-icons/git.png'
 import Download from '../../assets/site-icons/download.png'
 import Linkedin from '../../assets/site-icons/linkedin.png'
+import resume from '../../../public/Resume.pdf'
 
 
 const Navsocials = () => {
 	
 	return (
 		<div className="mr-40 flex lg:mr-20 lg:flex">
-			<a href="#" >
+			<a href={resume} download >
 				<img
 					className="px-4 hover:animate-pulse"
 					src={Download}
