@@ -62,6 +62,9 @@
   html{
     scroll-behavior: smooth;
   }
+  body{
+    width: fit-content;
+  }
 /* ANIMATIONS */
 @keyframes morph {
   0% {
