@@ -18,7 +18,7 @@ function App() {
         <nav className="sticky py-4 top-0 z-50 bg-skin-bg">
           <Navbar />
         </nav>
-        <header className="md:h-screen mb-72">
+        <header className="md:h-screen  ">
           <Header forwardedRef={childRef} />
         </header>
         <section className=" ">

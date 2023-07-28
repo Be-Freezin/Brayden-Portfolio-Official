@@ -5,15 +5,15 @@ const InterestsCards = ({ cardtitle, item, maintitle, icon, index }) => {
 
   return (
     <div
-      className="relative flex h-20 w-20 flex-col items-center justify-center rounded-md p-2 bg-skin-bg font-bitechalknormal text-sm text-skin-base  shadow-0xl shadow-mutedglow "
+      className="relative flex w-32 h-32 flex-col items-center justify-center mx-auto rounded-md p-2 bg-skin-bg font-bitechalknormal text-sm text-skin-base  shadow-0xl shadow-mutedglow "
       index={index}
       key="id"
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
     >
-      <div className="mx-auto flex h-full w-full flex-col justify-between text-center  ">
+      <div className="mx-auto flex h-5/6 w-5/6 flex-col justify-between text-center  ">
         <img className="my-2 mx-auto w-6" src={icon} alt="" srcSet="" />
-        <span className=" my-0  mx-auto ">{maintitle}</span>
+        <span className=" my-0  mx-auto text-xl ">{maintitle}</span>
       </div>
       {isShown && (
         <div

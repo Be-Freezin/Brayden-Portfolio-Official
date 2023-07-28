@@ -3,9 +3,9 @@ import OrangeBall from "../../../public/waveball orange.svg"
 import Yellowball from '../../../public/waveball yellow.svg'
 const Headercontent = () => {
   return (
-		<div className='mx-auto  flex w-full flex-col items-center justify-center lg:h-screen '>
+		<div className='mx-auto  flex flex-col w-full h-full items-center justify-center lg:h-screen '>
 			{/* GLOW BOX */}
-			<div className='lg:min-h-96 relative mx-auto  mt-64 flex h-72 w-full  flex-col items-center justify-center   lg:h-full lg:w-3/5   '>
+			<div className='lg:min-h-96 relative mx-auto my-72  flex h-72 w-full  flex-col items-center justify-center   lg:h-5/6 lg:w-3/5   '>
 				{/* BOTTOM RIGHT CIRCLES */}
 				{/* <div className="absolute bottom-10 right-6 h-28 w-28  rounded-full bg-skin-accentdark shadow-0xl shadow-circleredglow lg:right-20 lg:bottom-24 lg:h-80 lg:w-80"></div> */}
 				<img
