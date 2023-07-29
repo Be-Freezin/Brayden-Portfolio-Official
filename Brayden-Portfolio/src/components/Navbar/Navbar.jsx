@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, useCycle } from 'framer-motion'
 
 import Socials from './Navsocials'
@@ -26,49 +26,49 @@ import Logo from '/public/BF Logo Final.png'
 // 	},
 // }
 
-const variants = {
-	open: {
-		transition: { staggerChildren: 0.07, delayChildren: 0.2 },
-	},
-	closed: {
-		transition: { staggerChildren: 0.05, staggerDirection: -1 },
-	},
-}
+// const variants = {
+// 	open: {
+// 		transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+// 	},
+// 	closed: {
+// 		transition: { staggerChildren: 0.05, staggerDirection: -1 },
+// 	},
+// }
 
-const Livariants = {
-	open: {
-		y: 50,
-		opacity: 1,
-		transition: {
-			y: { stiffness: 1000, velocity: -100 },
-		},
-	},
-	closed: {
-		y: 0,
-		opacity: 1,
-		transition: {
-			y: { stiffness: 1000 },
-		},
-	},
-}
+// const Livariants = {
+// 	open: {
+// 		y: 50,
+// 		opacity: 1,
+// 		transition: {
+// 			y: { stiffness: 1000, velocity: -100 },
+// 		},
+// 	},
+// 	closed: {
+// 		y: 0,
+// 		opacity: 1,
+// 		transition: {
+// 			y: { stiffness: 1000 },
+// 		},
+// 	},
+// }
 
-const sidebar = {
-	open: () => ({
-		height: '100vh',
-		transition: {
-			stiffness: 100,
-		},
-		transform: 'translateY(0%)',
-	}),
-	closed: {
-		height: '60px',
-		opacity: 1,
-		transition: {
-			stiffness: 100,
-		},
-		transform: 'translateY(0%)',
-	},
-}
+// const sidebar = {
+// 	open: () => ({
+// 		height: '100vh',
+// 		transition: {
+// 			stiffness: 100,
+// 		},
+// 		transform: 'translateY(0%)',
+// 	}),
+// 	closed: {
+// 		height: '60px',
+// 		opacity: 1,
+// 		transition: {
+// 			stiffness: 100,
+// 		},
+// 		transform: 'translateY(0%)',
+// 	},
+// }
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useCycle(false, true)
@@ -81,30 +81,23 @@ const Navbar = () => {
 	// 	})
 	// }
 
-	// const scrollToSection = (sectionId) => {
-	// 	const element = document.getElementById(sectionId)
-	// 	const navHeight = document.querySelector('nav').offsetHeight
+	const scrollToSection = (sectionId) => {
+		const element = document.getElementById(sectionId)
+		const navHeight = document.querySelector('nav').offsetHeight
 
-	// 	const elementRect = element.getBoundingClientRect()
-	// 	const absoluteElementTop = elementRect.top + window.pageYOffset
-	// 	const finalPosition = absoluteElementTop - navHeight
+		const elementRect = element.getBoundingClientRect()
+		const absoluteElementTop = elementRect.top + window.pageYOffset
+		const finalPosition = absoluteElementTop - navHeight
 
-	// 	window.scrollTo({
-	// 		top: finalPosition,
-	// 		behavior: 'smooth',
-	// 	})
-	// }
+		window.scrollTo({
+			top: finalPosition,
+			behavior: 'smooth',
+		})
+	}
 
 	return (
-		<motion.nav
-			initial={false}
-			animate={toggleMenu ? 'open' : 'closed'}
-			className='sticky top-0 z-50 bg-skin-bg py-4 '
-		>
-			<motion.div
-				variants={sidebar}
-				className=' flex h-6 flex-row-reverse items-center justify-between py-6 lg:flex-row lg:justify-between'
-			>
+		<nav className='sticky top-0 z-50 bg-skin-bg py-4 '>
+			<div className=' flex h-6 flex-row-reverse items-center justify-between py-6 lg:flex-row lg:justify-between'>
 				<img
 					className='mr-6 cursor-pointer lg:hidden'
 					src={Hamburger}
@@ -115,12 +108,12 @@ const Navbar = () => {
 
 				<ul className='ml-20  hidden w-1/4 items-center justify-between   font-bitechalknormal text-2xl text-skin-base lg:flex'>
 					<li className='px-4'>
-						<a href='#home' className='hover:text-skin-accent '>
+						<a href='#home' className='hover:text-skin-accent'>
 							<img className='w-10' src={Logo} alt='' />
 						</a>
 					</li>
 					<li className='px-4'>
-						<a href='#about' className='hover:text-skin-accent '>
+						<a href='#about' className='hover:text-skin-accent'>
 							About
 						</a>
 					</li>
@@ -153,58 +146,33 @@ const Navbar = () => {
 								onClick={() => setToggleMenu(false)}
 							/>
 						</div>
-						<motion.ul
-							variants={variants}
-							className='mx-auto my-6 flex h-5/6 w-1/4  flex-col items-center justify-evenly font-bitechalknormal text-2xl text-skin-base'
-						>
-							<motion.li
-								variants={Livariants}
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.95 }}
-								className='px-4 hover:text-skin-accent'
-							>
-								<a  href='#about' onClick={() => 
-								setToggleMenu(false)
-								}>
+						<ul className='mx-auto my-6 flex h-5/6 w-1/4  flex-col items-center justify-evenly font-bitechalknormal text-2xl text-skin-base'>
+							<li className='px-4 hover:text-skin-accent'>
+								<a href='#about' onClick={(e) => setToggleMenu(false)}>
 									About
 								</a>
-							</motion.li>
-							<motion.li
-								variants={Livariants}
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.95 }}
-								className='px-4 hover:text-skin-accent'
-							>
+							</li>
+							<li className='px-4 hover:text-skin-accent'>
 								<a href='#skills' onClick={() => setToggleMenu(false)}>
 									Skills
 								</a>
-							</motion.li>
-							<motion.li
-								variants={Livariants}
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.95 }}
-								className='px-4 hover:text-skin-accent'
-							>
+							</li>
+							<li className='px-4 hover:text-skin-accent'>
 								<a href='#projects' onClick={() => setToggleMenu(false)}>
 									Projects
 								</a>
-							</motion.li>
-							<motion.li
-								variants={Livariants}
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.95 }}
-								className='px-4 hover:text-skin-accent'
-							>
+							</li>
+							<li className='px-4 hover:text-skin-accent'>
 								<a href='#contact' onClick={() => setToggleMenu(false)}>
 									{' '}
 									Contact
 								</a>
-							</motion.li>
-						</motion.ul>
+							</li>
+						</ul>
 					</div>
 				)}
-			</motion.div>
-		</motion.nav>
+			</div>
+		</nav>
 	)
 }
 

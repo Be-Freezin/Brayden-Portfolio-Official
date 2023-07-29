@@ -7,10 +7,10 @@ export default [
     list: {
       item1: "Elden Ring",
       item2: "Divinity: Original Sin 2",
-      item3: "NBA 2k23",
+      item3: "Diablo 4",
       item4: "Terraria",
       item5: "Bloodborne",
-      item6: "Balder's Gate 3",
+      item6: "Baldur's Gate 3",
     },
   },
   {
