@@ -13,32 +13,31 @@ function App() {
 
 
   return (
-    <div className="App">
-      <div className="bg-skin-bg ">
-        <nav className="sticky py-4 top-0 z-50 bg-skin-bg">
-          <Navbar />
-        </nav>
-        <header className="md:h-screen  ">
-          <Header forwardedRef={childRef} />
-        </header>
-        <section className=" ">
-          <About />
-        </section>
-        <section className="pt-48">
-          <Skills />
-        </section>
-        <section className="pt-48">
-          <Projects />
-        </section>
-        <section>
-          <Contact />
-        </section>
-        <footer className="border-t-2 border-bordermain py-6">
-          <Footer />
-        </footer>
-      </div>
-    </div>
-  )
+		<div className='App'>
+			<div className='bg-skin-bg '>
+				<Navbar />
+
+				<header className='md:h-screen  '>
+					<Header forwardedRef={childRef} />
+				</header>
+				<section  className=' '>
+					<About />
+				</section>
+				<section className=''>
+					<Skills />
+				</section>
+				<section className=''>
+					<Projects />
+				</section>
+				<section>
+					<Contact />
+				</section>
+				<footer className='border-t-2 border-bordermain py-6'>
+					<Footer />
+				</footer>
+			</div>
+		</div>
+	)
 }
 
 export default App

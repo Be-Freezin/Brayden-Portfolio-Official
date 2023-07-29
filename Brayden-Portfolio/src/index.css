@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer components {
+  .anchor::before {
+    @apply block;
+    height: 60px;
+    margin-top: 60px;
+    visibility: hidden;
+  }
+} */
+
 @layer base {
   :root {
     --text-primary: #f3f3f3;

@@ -19,10 +19,10 @@ const About = () => {
 	})
 
 	return (
-		<div id='about' className='flex flex-col justify-center   '>
+		<div id='about' className='flex flex-col justify-center  '>
 			<div className='flex flex-col-reverse items-center  justify-center md:flex-row-reverse'>
 				<div className='flex flex-col items-center justify-center md:w-1/2   '>
-					<h2 className='mx-auto my-5 text-center  w-fit font-handcraftChalk text-5xl text-skin-accent lg:text-8xl'>
+					<h2 className='mx-auto my-5 w-fit  text-center font-handcraftChalk text-5xl text-skin-accent lg:text-8xl'>
 						Get to know me
 					</h2>
 					<Aboutbio />
@@ -37,7 +37,10 @@ const About = () => {
 			<div className='mx-auto mt-16 lg:flex lg:h-full lg:w-full lg:flex-row lg:items-center lg:justify-evenly '>
 				<div className='flex items-center justify-center bg-skin-bg lg:h-full lg:w-1/2'></div>
 			</div>
-			<div className='mx-auto grid w-5/6  grid-cols-3  items-center justify-evenly gap-4 md:flex  pb-16   '>
+			{/* <h3 className='mx-auto mb-10 font-bitechalknormal text-skin-accent'>
+				Somethings i like
+			</h3> */}
+			<div className='mx-auto grid w-5/6  grid-cols-3  items-center justify-evenly gap-4 pb-16  md:flex   '>
 				{interestsElements}
 			</div>
 		</div>
