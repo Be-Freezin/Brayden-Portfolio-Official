@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import { motion, useCycle } from 'framer-motion'
 
 import Socials from './Navsocials'
@@ -6,94 +6,22 @@ import Hamburger from '../../assets/site-icons/hamburger.png'
 import Close from '../../assets/site-icons/close.png'
 import Logo from '/public/BF Logo Final.png'
 
-// const variants = {
-// 	open:{
-
-// 		transition: {
-// 			type: 'spring',
-// 			stiffness: 20,
-// 			restDelta: 2,
-// 		},
-// 	},
-// 	closed: {
-
-// 		transition: {
-// 			delay: 0.5,
-// 			type: 'spring',
-// 			stiffness: 400,
-// 			damping: 40,
-// 		},
-// 	},
-// }
-
-// const variants = {
-// 	open: {
-// 		transition: { staggerChildren: 0.07, delayChildren: 0.2 },
-// 	},
-// 	closed: {
-// 		transition: { staggerChildren: 0.05, staggerDirection: -1 },
-// 	},
-// }
-
-// const Livariants = {
-// 	open: {
-// 		y: 50,
-// 		opacity: 1,
-// 		transition: {
-// 			y: { stiffness: 1000, velocity: -100 },
-// 		},
-// 	},
-// 	closed: {
-// 		y: 0,
-// 		opacity: 1,
-// 		transition: {
-// 			y: { stiffness: 1000 },
-// 		},
-// 	},
-// }
-
-// const sidebar = {
-// 	open: () => ({
-// 		height: '100vh',
-// 		transition: {
-// 			stiffness: 100,
-// 		},
-// 		transform: 'translateY(0%)',
-// 	}),
-// 	closed: {
-// 		height: '60px',
-// 		opacity: 1,
-// 		transition: {
-// 			stiffness: 100,
-// 		},
-// 		transform: 'translateY(0%)',
-// 	},
-// }
-
 const Navbar = () => {
-	const [toggleMenu, setToggleMenu] = useCycle(false, true)
+	const [toggleMenu, setToggleMenu] = useState(false, true)
 
-	// const scrollToSection = (elementRef) => {
-	// 	const element = document.querySelector(elementRef)
+	// const scrollToSection = (sectionId) => {
+	// 	const element = document.getElementById(sectionId)
 	// 	const navHeight = document.querySelector('nav').offsetHeight
+
+	// 	const elementRect = element.getBoundingClientRect()
+	// 	const absoluteElementTop = elementRect.top + window.pageYOffset
+	// 	const finalPosition = absoluteElementTop - navHeight
+
 	// 	window.scrollTo({
+	// 		top: finalPosition,
 	// 		behavior: 'smooth',
 	// 	})
 	// }
-
-	const scrollToSection = (sectionId) => {
-		const element = document.getElementById(sectionId)
-		const navHeight = document.querySelector('nav').offsetHeight
-
-		const elementRect = element.getBoundingClientRect()
-		const absoluteElementTop = elementRect.top + window.pageYOffset
-		const finalPosition = absoluteElementTop - navHeight
-
-		window.scrollTo({
-			top: finalPosition,
-			behavior: 'smooth',
-		})
-	}
 
 	return (
 		<nav className='sticky top-0 z-50 bg-skin-bg py-4 '>
