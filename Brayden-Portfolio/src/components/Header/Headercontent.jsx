@@ -5,7 +5,7 @@ const Headercontent = () => {
   return (
 		<div className='mx-auto  flex flex-col w-full h-full items-center justify-center lg:h-screen '>
 			{/* GLOW BOX */}
-			<div className='lg:min-h-96 relative mx-auto my-72  flex h-72 w-full  flex-col items-center justify-center   lg:h-5/6 lg:w-3/5   '>
+			<div className=' relative mx-auto my-72  flex h-72 w-full  flex-col items-center justify-center   md:h-5/6 lg:w-3/5   '>
 				{/* BOTTOM RIGHT CIRCLES */}
 				{/* <div className="absolute bottom-10 right-6 h-28 w-28  rounded-full bg-skin-accentdark shadow-0xl shadow-circleredglow lg:right-20 lg:bottom-24 lg:h-80 lg:w-80"></div> */}
 				<img
@@ -25,10 +25,10 @@ const Headercontent = () => {
 				/>
 				{/* <div className='absolute top-8 left-4 h-6 w-6 rounded-full bg-skin-accentdark lg:left-20 lg:top-16 lg:h-12 lg:w-12 '></div> */}
 				{/* END TOP LEFT CIRCLES */}
-				<h1 className=' z-20  mt-16 text-center font-handcraftChalk text-4xl text-skin-base lg:text-9xl  '>
+				<h1 className=' z-20  mt-16 text-center font-handcraftChalk text-5xl text-skin-base lg:text-9xl  '>
 					Brayden Friesen
 				</h1>
-				<div className='z-20  mt-6 mr-20 font-bitechalknormal text-skin-base lg:mr-96 lg:text-2xl '>
+				<div className='z-20  mt-6  font-bitechalknormal text-skin-base text-center lg:text-2xl  '>
 					<p className=''>Front End Developer</p>
 					<p className=''>Design Tinkerer</p>
 				</div>

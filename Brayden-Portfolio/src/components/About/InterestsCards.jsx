@@ -12,7 +12,7 @@ const InterestsCards = ({ cardtitle, item, maintitle, icon, index }) => {
       onMouseLeave={() => setIsShown(false)}
     >
       <div className="mx-auto flex h-5/6 w-5/6 flex-col justify-between text-center  ">
-        <img className="my-2 mx-auto w-6" src={icon} alt="" srcSet="" />
+        <img className="my-2 mx-auto w-6 md:w-8" src={icon} alt="" srcSet="" />
         <span className=" my-0  mx-auto text-xl ">{maintitle}</span>
       </div>
       {isShown && (
