@@ -16,7 +16,7 @@ const ProjectCard = ({
 
 	const Underline = ({ left }) => (
 		<motion.div
-			className={`absolute bottom-0 h-0.5 w-1/3 bg-skin-accent ${left}  bottom-[-1px] z-10`}
+			className={`absolute bottom-0 h-[1px] w-1/3 bg-skin-accent ${left}  bottom-[-1px] `}
 			layoutId='underline'
 		/>
 	)
@@ -24,15 +24,15 @@ const ProjectCard = ({
 	return (
 		<div className='mx-6  font-bitechalknormal text-sm text-skin-base lg:w-1/2 lg:text-xl'>
 			<div className='  mt-8 rounded-lg bg-skin-muted p-6' key={index}>
-				<span className='   px-2 py-2'>{name}</span>
+				<span className='   px-2 py-2 md:text-3xl'>{name}</span>
 				<img
-					className='mx-auto w-full rounded-lg border-8 border-mainblack'
+					className='mx-auto my-2 w-full rounded-lg border-8 border-mainblack'
 					src={projectimg}
 					alt=''
 					srcSet=''
 				/>
-				<div className='mt-4 rounded-lg border-2 border-mainblack '>
-					<div className='relative flex flex-row justify-evenly rounded-lg  text-2xl'>
+				<div className='mt-4 h-96 rounded-lg border-2 border-mainblack '>
+					<div className='relative flex flex-row justify-evenly rounded-lg text-lg  md:text-2xl'>
 						<motion.button
 							onClick={() => setActiveTab('description')}
 							className='w-full rounded-t-lg py-2 hover:bg-mutedtext hover:text-skin-inverted'
@@ -41,7 +41,7 @@ const ProjectCard = ({
 						</motion.button>
 						<button
 							onClick={() => setActiveTab('techStack')}
-							className='w-full rounded-t-lg hover:bg-mutedtext hover:text-skin-inverted'
+							className='w-full rounded-t-lg hover:bg-mutedtext hover:text-skin-inverted '
 						>
 							TechStack
 						</button>
@@ -51,33 +51,44 @@ const ProjectCard = ({
 						>
 							Links
 						</button>
-						<AnimatePresence wait>
-							{activeTab === 'description' && <Underline left='left-0' />}
-							{activeTab === 'techStack' && <Underline left='left-38' />}
-							{activeTab === 'links' && <Underline left='left-2/3' />}
+						{/* <AnimatePresence wait> */}
+						{activeTab === 'description' && <Underline left='left-0' />}
+						{activeTab === 'techStack' && <Underline left='left-38' />}
+						{activeTab === 'links' && <Underline left='left-2/3' />}
+						{/* </AnimatePresence> */}
+					</div>
+					<div className='overflow-hidden'>
+						<AnimatePresence>
+							<motion.div
+								key={activeTab}
+								initial={{ opacity: 0, y: 10 }}
+								animate={{ opacity: 1, y: 10 }}
+								exit={{ opacity: 0, y: -10 }}
+								transition={{ duration: 0.3 }}
+								
+								className=''
+							>
+								{activeTab === 'description' && (
+									<p className='p-4'>{projectDescription}</p>
+								)}
+								{activeTab === 'techStack' && (
+									<p className='p-4'>{languages}</p>
+								)}
+								{activeTab === 'links' && (
+									<div className='flex flex-row justify-evenly p-4'>
+										<a className='flex' target='_blank' href={site}>
+											<img src={siteicon} alt='' srcSet='' />
+											<p className='ml-4'>Live Site</p>
+										</a>
+										<a className='flex' target='_blank' href={code}>
+											<img className='w-' src={repoicon} alt='' srcSet='' />
+											<p className='ml-4'>Repo</p>
+										</a>
+									</div>
+								)}
+							</motion.div>
 						</AnimatePresence>
 					</div>
-
-					<motion.div
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ duration: 0.5 }}
-					>
-						{activeTab === 'description' && (
-							<p className='p-4'>{projectDescription}</p>
-						)}
-						{activeTab === 'techStack' && <p className='p-4'>{languages}</p>}
-						{activeTab === 'links' && (
-							<div className='flex flex-row p-4'>
-								<a className='' target='_blank' href={site}>
-									<img src={siteicon} alt='' srcSet='' />
-								</a>
-								<a className='' target='_blank' href={code}>
-									<img className='w-' src={repoicon} alt='' srcSet='' />
-								</a>
-							</div>
-						)}
-					</motion.div>
 				</div>
 
 				{/* <div className='mt-4 flex items-center justify-between text-center lg:w-full'>
