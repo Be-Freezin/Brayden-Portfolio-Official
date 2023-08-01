@@ -5,17 +5,18 @@ import projectData from "../../projectData"
 const Projects = () => {
   const projectcard = projectData.map((project) => {
     return (
-      <ProjectCard
-        name={project.name}
-        languages={project.languages}
-        site={project.sitelink}
-        code={project.repolink}
-        siteicon={project.siteicon}
-        repoicon={project.repoicon}
-        projectimg={project.projectimage}
-        key={project.key}
-      />
-    )
+			<ProjectCard
+				name={project.name}
+				languages={project.languages}
+				site={project.sitelink}
+				code={project.repolink}
+				siteicon={project.siteicon}
+				repoicon={project.repoicon}
+				projectimg={project.projectimage}
+				projectDescription={project.projectDescription}
+				key={project.key}
+			/>
+		)
   })
 
   return (
@@ -29,9 +30,7 @@ const Projects = () => {
 			<div className="mx-auto grid place-items-center lg:grid-cols-2 ">
 				{projectcard}
 			</div>
-			<div className="  mt-8 rounded-lg bg-skin-accentdark p-6 ">
-				<h3 className="font-bitechalknormal">More are on the way...</h3>
-			</div>
+			
 		</div>
 	)
 }

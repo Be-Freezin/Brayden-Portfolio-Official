@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer base {
   :root {
     --text-primary: #f3f3f3;
@@ -9,7 +11,8 @@
     --text-inverted: #191919;
 
     --color-bg: #191919;
-    --color-muted: #454545;
+    --color-bg-muted: #454545;
+    --color-muted: #818181;
     --color-muted-text: #f3f3f3a6;
     --color-accent: #f68058;
     --color-glow: #ffd48e;
@@ -61,6 +64,9 @@
   }
   html{
     scroll-behavior: smooth;
+  }
+  body{
+    width: fit-content;
   }
 /* ANIMATIONS */
 @keyframes morph {
