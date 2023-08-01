@@ -86,7 +86,7 @@ const Form = () => {
 					className='mx-auto mb-6 block h-64 w-64 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-96 lg:text-2xl'
 				/>
 				<button
-					className='mx-auto block w-48 rounded-md border-2 border-bordermain px-8 py-2 text-skin-base transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:animate-morph hover:bg-skin-accent hover:text-skin-inverted lg:w-96 lg:py-4 lg:text-2xl'
+					className='mx-auto block w-full rounded-md border-2 border-bordermain px-8 py-2 bg-skin-accent text-xl text-skin-inverted hover:bg-skin-accent hover:text-skin-inverted  lg:py-4 lg:text-4xl'
 					type='submit'
 					onClick={handleSubmit}
 				>
