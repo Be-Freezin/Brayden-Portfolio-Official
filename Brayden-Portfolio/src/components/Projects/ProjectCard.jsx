@@ -54,7 +54,7 @@ const ProjectCard = ({
 						<AnimatePresence wait>
 							{activeTab === 'description' && <Underline left='left-0' />}
 							{activeTab === 'techStack' && <Underline left='left-38' />}
-							{activeTab === 'links' && <Underline left='left-84' />}
+							{activeTab === 'links' && <Underline left='left-2/3' />}
 						</AnimatePresence>
 					</div>
 
