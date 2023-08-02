@@ -6,18 +6,20 @@ export default [
 		sitelink: 'https://braydenfriesen.com/',
 		repolink: 'https://github.com/Be-Freezin/Brayden-Portfolio-Official',
 		projectimage: '/project-imgs/code-project.jpg',
-		projectDescription: 'My personal portfolio site. Filled with personality and curiosities. The primary objective of this project was to have a place i can showcase my projects and tell a story. Keeping it clean and minimal with my personality injected into it while remaining professional and light hearted. The projected was designed and created by me.',
+		projectDescription:
+			'My Personal Portfolio Site. Filled with Personality and Curiosities. The primary objective of this project was to create a place where I can showcase my projects and tell a story. I aimed to keep it clean and minimal while injecting my personality into it, maintaining a professional yet light-hearted feel. The project was entirely designed and developed by me.',
 		siteicon: '/site-icons/livesite.png',
 		repoicon: '/site-icons/repo.png',
 	},
 	{
 		key: 2,
 		name: 'Elden Ring Build Maker',
-		languages: ['ReactJS, HTML, TailwindCSS'],
+		languages: ['ReactJS, HTML, TailwindCSS, Axios'],
 		sitelink: 'https://cheerful-syrniki-d189ba.netlify.app/',
 		repolink: 'https://github.com/Be-Freezin/elden-ring',
 		projectimage: '/project-imgs/gaming-project.jpg',
-		projectDescription: 'The primary objective of this site was to showcase i can consume APIs and display the data from them. The project is used to help people create solid starting points for one of my favorite games, Elden Ring. This project is in continuous development and will one day get completed. Elden Ring has complex calculations and my main goal was to give users a starting point to help guid them on creating a build.',
+		projectDescription:
+			'The primary objective of this site is to showcase how I can consume APIs and display the data from them. The project is designed to assist people in creating solid starting points for one of my favorite games, Elden Ring. It is a work in progress, and I am continuously developing it until completion. Elden Ring involves complex calculations, and my main goal is to provide users with a starting point to guide them in creating a build.',
 		siteicon: '/site-icons/livesite.png',
 		repoicon: '/site-icons/repo.png',
 	},
@@ -28,7 +30,8 @@ export default [
 		sitelink: 'https://be-freezin.github.io/Password-Generator/',
 		repolink: 'https://github.com/Be-Freezin/Password-Generator',
 		projectimage: '/project-imgs/PasswordProject.jpg',
-		projectDescription: "One of the first Javascript projects i made when i started my learning journey. It is by no means meant to have the security to be used in real life. It can be used to generate a random string of characters that can be copied and used anywhere. The passwords don't get stored into any database.",
+		projectDescription:
+			'This project was one of the first Javascript projects I created when I began my learning journey. It is by no means intended to provide security for real-life use. The tool can be used to generate a random string of characters that can be copied and used anywhere. The passwords are not stored in any database.',
 		siteicon: '/site-icons/livesite.png',
 		repoicon: '/site-icons/repo.png',
 	},
@@ -39,7 +42,8 @@ export default [
 		sitelink: 'https://www.jarynfriesen.com/',
 		repolink: 'https://github.com/Be-Freezin/Jaryn-Frisen-Website-FINAL',
 		projectimage: '/project-imgs/JF-2.jpg',
-		projectDescription: "My first website ever created for a client. The priomary objective for this was to give the customer an online presence and allow them to treat this as a business card and send to promoters. He's actually gotten several gigs by showing people his website!",
+		projectDescription:
+			'This was my first website ever created for a client. The primary objective was to give the customer an online presence and allow them to use it as a business card to share with promoters. Interestingly, he has secured several gigs by showcasing his website to people!',
 		siteicon: '/site-icons/livesite.png',
 		repoicon: '/site-icons/repo.png',
 	},

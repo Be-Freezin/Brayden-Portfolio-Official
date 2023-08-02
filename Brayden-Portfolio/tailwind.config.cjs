@@ -7,6 +7,7 @@ module.exports = {
 				bitechalk: ['BiteChalk'],
 				bitechalknormal: ['BiteChalkNormal'],
 				handcraftChalk: ['HandcraftChalkRegular'],
+				paragraph: ['Fredoka']
 			},
 			textColor: {
 				skin: {
