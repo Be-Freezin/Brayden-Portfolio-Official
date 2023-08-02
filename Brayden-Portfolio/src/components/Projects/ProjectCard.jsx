@@ -21,17 +21,19 @@ const ProjectCard = ({
 		/>
 	)
 
+
+
 	return (
 		<div className='mx-6  font-bitechalknormal text-sm text-skin-base lg:w-1/2 lg:text-xl'>
 			<div className='  mt-8 rounded-lg bg-skin-muted p-6' key={index}>
-				<span className='   px-2 py-2 md:text-3xl'>{name}</span>
+				<span className='   px-2  text-xl md:text-3xl'>{name}</span>
 				<img
 					className='mx-auto my-2 w-full rounded-lg border-8 border-mainblack'
 					src={projectimg}
 					alt=''
 					srcSet=''
 				/>
-				<div className='mt-4 h-96 rounded-lg border-2 border-mainblack '>
+				<div className='mt-4 rounded-lg border-2 border-mainblack '>
 					<div className='relative flex flex-row justify-evenly rounded-lg text-lg  md:text-2xl'>
 						<motion.button
 							onClick={() => setActiveTab('description')}
@@ -41,7 +43,7 @@ const ProjectCard = ({
 						</motion.button>
 						<button
 							onClick={() => setActiveTab('techStack')}
-							className='w-full rounded-t-lg hover:bg-mutedtext hover:text-skin-inverted '
+							className='w-full rounded-t-lg hover:bg-mutedtext hover:text-skin-inverted active:text-skin-inverted active:bg-mutedtext '
 						>
 							TechStack
 						</button>
@@ -57,31 +59,42 @@ const ProjectCard = ({
 						{activeTab === 'links' && <Underline left='left-2/3' />}
 						{/* </AnimatePresence> */}
 					</div>
-					<div className='overflow-hidden'>
+					<div className='overflow-hidden font-paragraph'>
 						<AnimatePresence>
 							<motion.div
 								key={activeTab}
-								initial={{ opacity: 0, y: 10 }}
-								animate={{ opacity: 1, y: 10 }}
-								exit={{ opacity: 0, y: -10 }}
+								initial={{ opacity: 1 }}
+								animate={{ opacity: 1 }}
+								exit={{ opacity: 0 }}
 								transition={{ duration: 0.3 }}
-								
-								className=''
+								className='h-full overflow-y-auto'
 							>
 								{activeTab === 'description' && (
-									<p className='p-4'>{projectDescription}</p>
+									<p className='p-4  text-lg md:text-xl'>
+										{projectDescription}
+									</p>
 								)}
 								{activeTab === 'techStack' && (
-									<p className='p-4'>{languages}</p>
+									<div className='flex items-center justify-center text-center text-lg md:text-3xl'>
+										<p className='p-4'>{languages}</p>
+									</div>
 								)}
 								{activeTab === 'links' && (
-									<div className='flex flex-row justify-evenly p-4'>
-										<a className='flex' target='_blank' href={site}>
+									<div className='flex flex-row items-center justify-evenly p-4 text-lg md:text-2xl'>
+										<a
+											className='flex hover:text-skin-accent'
+											target='_blank'
+											href={site}
+										>
 											<img src={siteicon} alt='' srcSet='' />
-											<p className='ml-4'>Live Site</p>
+											<p className='ml-4 '>Live Site</p>
 										</a>
-										<a className='flex' target='_blank' href={code}>
-											<img className='w-' src={repoicon} alt='' srcSet='' />
+										<a
+											className='flex hover:text-skin-accent'
+											target='_blank'
+											href={code}
+										>
+											<img className='' src={repoicon} alt='' srcSet='' />
 											<p className='ml-4'>Repo</p>
 										</a>
 									</div>

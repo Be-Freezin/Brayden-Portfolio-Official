@@ -40,9 +40,9 @@ const About = () => {
 			{/* <h3 className='mx-auto mb-10 font-bitechalknormal text-skin-accent'>
 				Somethings i like
 			</h3> */}
-			<div className='mx-auto grid w-5/6  grid-cols-3  items-center justify-evenly gap-4 pb-16  md:flex   '>
+			{/* <div className='mx-auto grid w-5/6  grid-cols-3  items-center justify-evenly gap-4 pb-16  md:flex   '>
 				{interestsElements}
-			</div>
+			</div> */}
 		</div>
 	)
 }
