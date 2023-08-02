@@ -75,7 +75,7 @@ const ProjectCard = ({
 									</p>
 								)}
 								{activeTab === 'techStack' && (
-									<div className='flex items-center justify-center text-center text-lg md:text-3xl'>
+									<div className='flex items-center justify-center text-center text-lg md:text-xl'>
 										<p className='p-4'>{languages}</p>
 									</div>
 								)}

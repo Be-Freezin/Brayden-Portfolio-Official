@@ -40,22 +40,34 @@ const Navbar = () => {
 						</a>
 					</li>
 					<li className='px-4'>
-						<a href='#about' className='hover:text-skin-accent'>
+						<a
+							href='#about'
+							className='hover:text-skin-accent active:text-skin-accent'
+						>
 							About
 						</a>
 					</li>
 					<li className='px-4'>
-						<a href='#skills' className='hover:text-skin-accent '>
+						<a
+							href='#skills'
+							className='hover:text-skin-accent active:text-skin-accent '
+						>
 							Skills
 						</a>
 					</li>
 					<li className='px-4'>
-						<a href='#projects' className='hover:text-skin-accent '>
+						<a
+							href='#projects'
+							className='hover:text-skin-accent active:text-skin-accent '
+						>
 							Projects
 						</a>
 					</li>
 					<li className='px-4'>
-						<a href='#contact' className='hover:text-skin-accent '>
+						<a
+							href='#contact'
+							className='hover:text-skin-accent active:text-skin-accent '
+						>
 							Contact
 						</a>
 					</li>
