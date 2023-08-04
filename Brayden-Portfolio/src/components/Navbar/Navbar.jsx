@@ -5,11 +5,8 @@ import Hamburger from '../../assets/site-icons/hamburger.png'
 import Close from '../../assets/site-icons/close.png'
 import Logo from '/public/BF Logo Final.png'
 
-
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false)
-
-
 
 	return (
 		<nav className='sticky top-0 z-50 bg-skin-trans py-4 '>
@@ -64,11 +61,8 @@ const Navbar = () => {
 
 				<Socials />
 				{toggleMenu && (
-					
 					<div className='fixed top-0 left-0 z-40 mx-auto my-0 h-full w-screen flex-row-reverse items-center justify-center  bg-skin-bg py-2 text-lg '>
-						
 						<div className='flex flex-row-reverse items-center justify-between'>
-							
 							<img
 								className='mr-10 cursor-pointer pt-4'
 								src={Close}
@@ -100,7 +94,6 @@ const Navbar = () => {
 								</a>
 							</li>
 						</ul>
-						
 					</div>
 				)}
 			</div>
