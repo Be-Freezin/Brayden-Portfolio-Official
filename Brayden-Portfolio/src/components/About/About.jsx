@@ -1,28 +1,17 @@
 import React, { useState } from 'react'
 import Aboutbio from './Aboutbio'
-import InterestsCards from './InterestsCards'
-import interestsData from '../../interestsData'
+
+
 import Portrait from '/public/portrait.png'
 
 const About = () => {
-	const interestsElements = interestsData.map((interest) => {
-		return (
-			<InterestsCards
-				cardtitle={interest.cardtitle}
-				maintitle={interest.maintitle}
-				item={interest.list}
-				index={interest.key}
-				description={interest.description}
-				icon={interest.icon}
-			/>
-		)
-	})
+
 
 	return (
-		<div id='about' className='flex flex-col justify-center  '>
+		<div id='about' className='flex flex-col justify-center md:my-48 '>
 			<div className='flex flex-col-reverse items-center  justify-center md:flex-row-reverse'>
-				<div className='flex flex-col items-center justify-center md:w-1/2   '>
-					<h2 className='mx-auto my-5 w-fit  text-center font-handcraftChalk text-5xl text-skin-accent lg:text-8xl'>
+				<div className='flex flex-col items-center justify-center md:w-1/2    '>
+					<h2 className='mx-auto my-5 w-fit px-5 text-center font-lordish tracking-wider text-6xl sm:text-7xl text-skin-accent lg:text-9xl'>
 						Get to know me
 					</h2>
 					<Aboutbio />
@@ -37,12 +26,6 @@ const About = () => {
 			<div className='mx-auto mt-16 lg:flex lg:h-full lg:w-full lg:flex-row lg:items-center lg:justify-evenly '>
 				<div className='flex items-center justify-center bg-skin-bg lg:h-full lg:w-1/2'></div>
 			</div>
-			{/* <h3 className='mx-auto mb-10 font-bitechalknormal text-skin-accent'>
-				Somethings i like
-			</h3> */}
-			{/* <div className='mx-auto grid w-5/6  grid-cols-3  items-center justify-evenly gap-4 pb-16  md:flex   '>
-				{interestsElements}
-			</div> */}
 		</div>
 	)
 }

@@ -57,7 +57,7 @@ const Form = () => {
 
 	return (
 		<form
-			className=' font-bitechalknormal'
+			className=' font-paragraph'
 			ref={contactForm}
 			onSubmit={handleSubmit}
 		>

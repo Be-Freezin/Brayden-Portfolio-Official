@@ -11,6 +11,7 @@
     --text-inverted: #191919;
 
     --color-bg: #191919;
+    --color-bg-trans: #191919dc;
     --color-bg-muted: #454545;
     --color-muted: #818181;
     --color-muted-text: #f3f3f3a6;
@@ -18,33 +19,7 @@
     --color-glow: #ffd48e;
     --color-accent-main: #ffc466;
 
-    --color-hover-game: linear-gradient(
-      to bottom,
-      #9747ff,
-      #be44ea,
-      #d748d7,
-      #e753c6,
-      #f161b8,
-      #fb69a6,
-      #ff7597,
-      #ff828c,
-      #ff9274,
-      #ffad54,
-      #ffcf30,
-      #fdf30b,
-    );
-    --color-hover-beer: #ebbb40;
-    --color-hover-pc: #48d7fe;
-    --color-hover-ball: linear-gradient(
-      to bottom,
-      #006bb6,
-      #6c5fbd,
-      #ac48ab,
-      #d92583,
-      #ed174c
-    );
-    --color-hover-music: #ed4c4c;
-    --color-hover-code: #aeca63;
+    
   }
   @font-face {
     font-family: "BiteChalk";
@@ -57,6 +32,10 @@
   @font-face {
     font-family: "HandcraftChalkRegular";
     src: url("/HandcraftChalkRegular.ttf");
+  }
+  @font-face {
+    font-family: "LordishRegular";
+    src: url("/LordishRegular.ttf");
   }
   h1 {
     text-shadow: 2px -2px 0 #000, -2px -2px 0 #000, 3px -2px 0 #000,

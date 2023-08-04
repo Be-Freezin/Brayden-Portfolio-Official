@@ -5,25 +5,14 @@ import Hamburger from '../../assets/site-icons/hamburger.png'
 import Close from '../../assets/site-icons/close.png'
 import Logo from '/public/BF Logo Final.png'
 
+
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false)
 
-	// const scrollToSection = (sectionId) => {
-	// 	const element = document.getElementById(sectionId)
-	// 	const navHeight = document.querySelector('nav').offsetHeight
 
-	// 	const elementRect = element.getBoundingClientRect()
-	// 	const absoluteElementTop = elementRect.top + window.pageYOffset
-	// 	const finalPosition = absoluteElementTop - navHeight
-
-	// 	window.scrollTo({
-	// 		top: finalPosition,
-	// 		behavior: 'smooth',
-	// 	})
-	// }
 
 	return (
-		<nav className='sticky top-0 z-50 bg-skin-bg py-4 '>
+		<nav className='sticky top-0 z-50 bg-skin-trans py-4 '>
 			<div className=' flex h-6 flex-row-reverse items-center justify-between py-6 lg:flex-row lg:justify-between'>
 				<img
 					className='mr-6 cursor-pointer lg:hidden'
@@ -33,7 +22,7 @@ const Navbar = () => {
 					onClick={() => setToggleMenu(true)}
 				/>
 
-				<ul className='ml-20  hidden w-1/4 items-center justify-between font-bitechalknormal text-2xl text-skin-base lg:flex'>
+				<ul className='ml-20  hidden w-1/4 items-center justify-between font-paragraph text-2xl text-skin-base lg:flex'>
 					<li className='px-4'>
 						<a href='#home' className=''>
 							<img className='md:w-10' src={Logo} alt='' />
@@ -75,8 +64,11 @@ const Navbar = () => {
 
 				<Socials />
 				{toggleMenu && (
+					
 					<div className='fixed top-0 left-0 z-40 mx-auto my-0 h-full w-screen flex-row-reverse items-center justify-center  bg-skin-bg py-2 text-lg '>
+						
 						<div className='flex flex-row-reverse items-center justify-between'>
+							
 							<img
 								className='mr-10 cursor-pointer pt-4'
 								src={Close}
@@ -108,6 +100,7 @@ const Navbar = () => {
 								</a>
 							</li>
 						</ul>
+						
 					</div>
 				)}
 			</div>

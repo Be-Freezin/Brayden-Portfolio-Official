@@ -2,7 +2,7 @@ import React from "react"
 
 const Aboutbio = () => {
   return (
-		<div className='  mx-auto mb-2 flex w-full flex-col justify-center  bg-skin-bg p-6 text-center font-paragraph text-lg text-skin-base lg:mx-0 lg:mb-0  lg:w-2/3    lg:text-xl'>
+		<div className='  mx-auto mb-2 flex w-full flex-col justify-center  bg-skin-bg p-6 text-left font-paragraph text-lg text-skin-base lg:mx-0 lg:mb-0  lg:w-2/3  tracking-wide   md:text-xl'>
 			<p className='mx-auto  lg:mx-auto w-5/6 '>
 				Hey, I’m <span className=''>Brayden!</span> An ambitious Front End
 				Developer who's been building my web development chops for over a year.
