@@ -24,9 +24,9 @@ const ProjectCard = ({
 
 
 	return (
-		<div className='mx-6  font-bitechalknormal text-sm text-skin-base lg:w-1/2 lg:text-xl'>
+		<div className='mx-6  font-paragraph text-sm text-skin-base lg:w-1/2 lg:text-xl'>
 			<div className='  mt-8 rounded-lg bg-skin-muted p-6' key={index}>
-				<span className='   px-2  text-xl md:text-3xl'>{name}</span>
+				<span className='   px-2  text-xl md:text-3xl font-bold'>{name}</span>
 				<img
 					className='mx-auto my-2 w-full rounded-lg border-8 border-mainblack'
 					src={projectimg}
@@ -75,7 +75,7 @@ const ProjectCard = ({
 									</p>
 								)}
 								{activeTab === 'techStack' && (
-									<div className='flex items-center justify-center text-center text-lg md:text-3xl'>
+									<div className='flex items-center justify-center text-center text-lg md:text-xl'>
 										<p className='p-4'>{languages}</p>
 									</div>
 								)}

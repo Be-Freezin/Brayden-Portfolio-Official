@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.10.0",
     "email-js": "^2.0.2",
     "framer-motion": "^10.15.0",
+    "npm-check-updates": "^16.10.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-toastify": "^9.1.1"

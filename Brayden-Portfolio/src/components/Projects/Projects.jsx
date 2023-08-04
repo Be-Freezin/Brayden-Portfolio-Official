@@ -22,9 +22,9 @@ const Projects = () => {
   return (
 		<div
 			id="projects"
-			className={'flex h-fit flex-col items-center justify-center  '}
+			className='flex  flex-col items-center justify-center md:my-48  '
 		>
-			<h3 className="mx-auto font-handcraftChalk text-5xl text-skin-accent lg:mb-20 lg:text-8xl">
+			<h3 className="mx-auto my-10 font-lordish text-6xl text-skin-accent lg:mb-20 lg:text-9xl tracking-wider">
 				Projects
 			</h3>
 			<div className="mx-auto grid place-items-center lg:grid-cols-2 ">

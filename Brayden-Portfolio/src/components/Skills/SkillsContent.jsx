@@ -26,14 +26,14 @@ const skills = [
 const SkillsContent = () => {
 	return (
 		<div className=' flex flex-col  items-center justify-center   md:h-full  '>
-			<h3 className='my-10 w-full text-center font-handcraftChalk text-5xl text-skin-accent lg:text-9xl '>
+			<h3 className='my-10 w-full text-center font-lordish tracking-wider px-5 text-6xl text-skin-accent sm:text-7xl lg:text-9xl '>
 				Things im good at
 			</h3>
-			<div className='grid grid-cols-2 md:grid-cols-5 grid-rows-2 place-content-center content-center gap-8 px-8 md:gap-16 my-10   '>
+			<div className='grid grid-cols-3 md:grid-cols-5 grid-rows-2 place-content-center content-center gap-8 px-8 md:gap-16 my-10   '>
 				{skills.map((skill, index) => (
 					<div
 						key={index}
-						className='content-center mx-auto flex h-full w-16 flex-col items-center justify-between  p-2 font-bitechalknormal text-xl text-skin-base md:h-full md:w-36  md:text-xl lg:text-2xl '
+						className='content-center mx-auto flex h-full w-16 flex-col items-center justify-between  p-2 font-paragraph text-xl text-skin-base md:h-full md:w-36  md:text-xl lg:text-2xl '
 					>
 						<div className=' '>
 							<img

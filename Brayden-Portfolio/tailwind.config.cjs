@@ -4,10 +4,11 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
+				lordish: ['LordishRegular'],
 				bitechalk: ['BiteChalk'],
 				bitechalknormal: ['BiteChalkNormal'],
 				handcraftChalk: ['HandcraftChalkRegular'],
-				paragraph: ['Fredoka']
+				paragraph: ['Neuton'],
 			},
 			textColor: {
 				skin: {
@@ -16,9 +17,13 @@ module.exports = {
 					inverted: 'var(--text-inverted)',
 				},
 			},
+			fontSize:{
+				'10xl': '12rem'
+			},
 			backgroundColor: {
 				skin: {
 					bg: 'var(--color-bg)',
+					trans: 'var(--color-bg-trans)',
 					muted: 'var(--color-bg-muted)',
 					lightMuted: 'var(--color-muted)',
 					accentdark: 'var(--color-accent)',
@@ -47,10 +52,10 @@ module.exports = {
 			animation: {
 				morph: 'morph 3s ease-in-out infinite;',
 			},
-      inset:{
-        '84': '24.3rem',
-        '63': '15.96rem',
-      }
+			inset: {
+				84: '24.3rem',
+				63: '15.96rem',
+			},
 		},
 	},
 	plugins: [],
