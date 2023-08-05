@@ -16,17 +16,19 @@ const ProjectCard = ({
 
 	const Underline = ({ left }) => (
 		<motion.div
-			className={`absolute bottom-0 h-[1px] w-1/3 bg-skin-accent ${left}  bottom-[-1px] `}
+			className={`absolute bottom-0 h-[1px] w-1/3 bg-skin-accent ${left}  bottom-[-1px] overflow-hidden `}
+			initial={{ left: 'left-0' }}
+			animate={{ left: left }}
 			layoutId='underline'
+			transition={{ duration: 0.3 }}
 		/>
 	)
-
-
+	const tabPosition = ['left-0', 'left-38', 'left-2/3']
 
 	return (
 		<div className='mx-6  font-paragraph text-sm text-skin-base lg:w-1/2 lg:text-xl'>
-			<div className='  mt-8 rounded-lg bg-skin-muted p-6' key={index}>
-				<span className='   px-2  text-xl md:text-3xl font-bold'>{name}</span>
+			<div className='  mt-8 rounded-lg bg-skin-muted p-4 ' key={index}>
+				<span className='   px-2  text-xl font-bold md:text-3xl'>{name}</span>
 				<img
 					className='mx-auto my-2 w-full rounded-lg border-8 border-mainblack'
 					src={projectimg}
@@ -37,27 +39,27 @@ const ProjectCard = ({
 					<div className='relative flex flex-row justify-evenly rounded-lg text-lg  md:text-2xl'>
 						<motion.button
 							onClick={() => setActiveTab('description')}
-							className='w-full rounded-t-lg py-2 hover:bg-mutedtext hover:text-skin-inverted'
+							className='w-full overflow-hidden rounded-t-lg py-2 hover:bg-mutedtext hover:text-skin-inverted'
 						>
-							Description
+							Details
 						</motion.button>
 						<button
 							onClick={() => setActiveTab('techStack')}
-							className='w-full rounded-t-lg hover:bg-mutedtext hover:text-skin-inverted active:text-skin-inverted active:bg-mutedtext '
+							className='w-full overflow-hidden rounded-t-lg hover:bg-mutedtext hover:text-skin-inverted active:bg-mutedtext active:text-skin-inverted '
 						>
-							TechStack
+							Tech Stack
 						</button>
 						<button
 							onClick={() => setActiveTab('links')}
-							className='w-full rounded-t-lg hover:bg-mutedtext hover:text-skin-inverted'
+							className='w-full overflow-hidden rounded-t-lg hover:bg-mutedtext hover:text-skin-inverted'
 						>
 							Links
 						</button>
-						{/* <AnimatePresence wait> */}
-						{activeTab === 'description' && <Underline left='left-0' />}
-						{activeTab === 'techStack' && <Underline left='left-38' />}
-						{activeTab === 'links' && <Underline left='left-2/3' />}
-						{/* </AnimatePresence> */}
+						
+						{activeTab === 'description' && <Underline left={tabPosition[0]} />}
+						{activeTab === 'techStack' && <Underline left={tabPosition[1]} />}
+						{activeTab === 'links' && <Underline left={tabPosition[2]} />}
+						
 					</div>
 					<div className='overflow-hidden font-paragraph'>
 						<AnimatePresence>
@@ -67,7 +69,7 @@ const ProjectCard = ({
 								animate={{ opacity: 1 }}
 								exit={{ opacity: 0 }}
 								transition={{ duration: 0.3 }}
-								className='h-full overflow-y-auto'
+								className='h-full overflow-hidden'
 							>
 								{activeTab === 'description' && (
 									<p className='p-4  text-lg md:text-xl'>
@@ -86,7 +88,7 @@ const ProjectCard = ({
 											target='_blank'
 											href={site}
 										>
-											<img src={siteicon} alt='' srcSet='' />
+											
 											<p className='ml-4 '>Live Site</p>
 										</a>
 										<a
@@ -94,7 +96,7 @@ const ProjectCard = ({
 											target='_blank'
 											href={code}
 										>
-											<img className='' src={repoicon} alt='' srcSet='' />
+										
 											<p className='ml-4'>Repo</p>
 										</a>
 									</div>
@@ -103,17 +105,6 @@ const ProjectCard = ({
 						</AnimatePresence>
 					</div>
 				</div>
-
-				{/* <div className='mt-4 flex items-center justify-between text-center lg:w-full'>
-					<span className='   px-2 py-2'>{name}</span>
-					<span className=' px-2 py-1'>{languages}</span>
-					<a className='  p-2' target='_blank' href={site}>
-						<img src={siteicon} alt='' srcSet='' />
-					</a>
-					<a className='  p-2 ' target='_blank' href={code}>
-						<img className='w-' src={repoicon} alt='' srcSet='' />
-					</a>
-				</div> */}
 			</div>
 		</div>
 	)

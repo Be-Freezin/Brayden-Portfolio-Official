@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-
+import { MenuToggle } from './menuToggle'
+import { motion } from 'framer-motion'
 import Socials from './Navsocials'
 import Hamburger from '../../assets/site-icons/hamburger.png'
 import Close from '../../assets/site-icons/close.png'
@@ -7,17 +8,21 @@ import Logo from '/public/BF Logo Final.png'
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false)
+	const handleToggle = () => {
+		setToggleMenu(!toggleMenu)
+	}
 
 	return (
-		<nav className='sticky top-0 z-50 bg-skin-trans py-4 '>
+		<motion.nav className='sticky top-0 z-50 bg-skin-trans py-4 '>
 			<div className=' flex h-6 flex-row-reverse items-center justify-between py-6 lg:flex-row lg:justify-between'>
-				<img
+				{/* <img
 					className='mr-6 cursor-pointer lg:hidden'
 					src={Hamburger}
 					alt='Hamburger Icon '
 					srcSet=''
 					onClick={() => setToggleMenu(true)}
-				/>
+				/> */}
+				<MenuToggle toggle={handleToggle} isOpen={toggleMenu} />
 
 				<ul className='ml-20  hidden w-1/4 items-center justify-between font-paragraph text-2xl text-skin-base lg:flex'>
 					<li className='px-4'>
@@ -62,7 +67,7 @@ const Navbar = () => {
 				<Socials />
 				{toggleMenu && (
 					<div className='fixed top-0 left-0 z-40 mx-auto my-0 h-full w-screen flex-row-reverse items-center justify-center  bg-skin-bg py-2 text-lg '>
-						<div className='flex flex-row-reverse items-center justify-between'>
+						{/* <div className='flex flex-row-reverse items-center justify-between'>
 							<img
 								className='mr-10 cursor-pointer pt-4'
 								src={Close}
@@ -70,8 +75,8 @@ const Navbar = () => {
 								srcSet=''
 								onClick={() => setToggleMenu(false)}
 							/>
-						</div>
-						<ul className='mx-auto my-6 flex h-5/6 w-1/4  flex-col items-center justify-evenly font-bitechalknormal text-2xl text-skin-base'>
+						</div> */}
+						<ul className='mx-auto my-6 flex h-5/6 w-1/4  flex-col items-center justify-evenly font-paragraph text-2xl text-skin-base'>
 							<li className='px-4 hover:text-skin-accent'>
 								<a href='#about' onClick={(e) => setToggleMenu(false)}>
 									About
@@ -97,7 +102,7 @@ const Navbar = () => {
 					</div>
 				)}
 			</div>
-		</nav>
+		</motion.nav>
 	)
 }
 

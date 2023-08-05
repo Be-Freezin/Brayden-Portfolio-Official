@@ -2,73 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
-  :root {
-    --text-primary: #f3f3f3;
-    --text-accent: #ffc466;
-    --text-inverted: #191919;
+	:root {
+		--text-primary: #f3f3f3;
+		--text-accent: #ffc466;
+		--text-inverted: #191919;
 
-    --color-bg: #191919;
-    --color-bg-trans: #191919dc;
-    --color-bg-muted: #454545;
-    --color-muted: #818181;
-    --color-muted-text: #f3f3f3a6;
-    --color-accent: #f68058;
-    --color-glow: #ffd48e;
-    --color-accent-main: #ffc466;
-
-    
-  }
-  @font-face {
-    font-family: "BiteChalk";
-    src: url("/public/BiteChalk.ttf");
-  }
-  @font-face {
-    font-family: "BiteChalkNormal";
-    src: url("/public/BiteChalkNormal.ttf");
-  }
-  @font-face {
-    font-family: "HandcraftChalkRegular";
-    src: url("/HandcraftChalkRegular.ttf");
-  }
-  @font-face {
-    font-family: "LordishRegular";
-    src: url("/LordishRegular.ttf");
-  }
-  h1 {
-    text-shadow: 2px -2px 0 #000, -2px -2px 0 #000, 3px -2px 0 #000,
-      -2px 2px 0 #000;
-  }
-  html{
-    scroll-behavior: smooth;
-  }
-  body{
-    width: fit-content;
-  }
-/* ANIMATIONS */
-@keyframes morph {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+		--color-bg: #191919;
+		--color-bg-trans: #191919dc;
+		--color-bg-muted: #454545;
+		--color-muted: #818181;
+		--color-muted-text: #f3f3f3a6;
+		--color-accent: #f68058;
+		--color-glow: #ffd48e;
+		--color-accent-main: #ffc466;
+		--color-accent-mute: #f7c474;
+	}
+	@font-face {
+		font-family: 'BiteChalk';
+		src: url('/public/BiteChalk.ttf');
+	}
+	@font-face {
+		font-family: 'BiteChalkNormal';
+		src: url('/public/BiteChalkNormal.ttf');
+	}
+	@font-face {
+		font-family: 'HandcraftChalkRegular';
+		src: url('/HandcraftChalkRegular.ttf');
+	}
+	@font-face {
+		font-family: 'LordishRegular';
+		src: url('/LordishRegular.ttf');
+	}
+	h1 {
+		text-shadow: 2px -2px 0 #000, -2px -2px 0 #000, 3px -2px 0 #000,
+			-2px 2px 0 #000;
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		width: fit-content;
+	}
 }
-
-}
-
-.animate-morph {
-  animation: morph 4s ease-in-out infinite;
-}
-
-
-/* PARALAX */
-
-
-
-
