@@ -26,7 +26,7 @@ const ProjectCard = ({
 	const tabPosition = ['left-0', 'left-38', 'left-2/3']
 
 	return (
-		<div className='mx-6  font-paragraph text-sm text-skin-base lg:w-1/2 lg:text-xl'>
+		<div className='mx-6  font-paragraph text-sm text-skin-base lg:w-3/4 lg:text-xl'>
 			<div className='  mt-8 rounded-lg bg-skin-muted p-4 ' key={index}>
 				<span className='   px-2  text-xl font-bold md:text-3xl'>{name}</span>
 				<img
