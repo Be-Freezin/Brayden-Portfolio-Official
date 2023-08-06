@@ -65,14 +65,14 @@ const Form = () => {
 
 	return (
 		<form className=' font-paragraph' ref={contactForm} onSubmit={handleSubmit}>
-			<div className=' mx-auto  flex-col items-center  justify-evenly text-skin-base '>
+			<div className=' mx-auto  flex-col items-center   justify-evenly text-skin-base  '>
 				<input
 					type='text'
 					placeholder='Name'
 					onChange={handleChange}
 					name='user_name'
 					value={formData.user_name}
-					className='mx-auto mb-6 block w-64 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-96 lg:text-2xl'
+					className='mx-auto mb-6 block w-96 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-[40rem] lg:text-2xl'
 				/>
 				<input
 					type='text'
@@ -80,14 +80,14 @@ const Form = () => {
 					onChange={handleChange}
 					name='user_email'
 					value={formData.user_email}
-					className='mx-auto mb-6 block w-64 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-96 lg:text-2xl'
+					className='mx-auto mb-6 block w-96 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-[40rem]  lg:text-2xl'
 				/>
 				<textarea
 					placeholder='Message'
 					onChange={handleChange}
 					name='message'
 					value={formData.message}
-					className='mx-auto mb-6 block h-64 w-64 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-96 lg:text-2xl'
+					className='mx-auto mb-6 block h-64 w-96 rounded-md border-2 border-bordermain bg-transparent p-4 lg:w-[40rem] lg:text-2xl'
 				/>
 				<motion.div whileHover={{ scale: 1.1 }} {...handleWobble}>
 					<button
