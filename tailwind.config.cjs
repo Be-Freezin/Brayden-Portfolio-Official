@@ -17,8 +17,8 @@ module.exports = {
 					inverted: 'var(--text-inverted)',
 				},
 			},
-			fontSize:{
-				'10xl': '12rem'
+			fontSize: {
+				'10xl': '12rem',
 			},
 			backgroundColor: {
 				skin: {
@@ -29,20 +29,15 @@ module.exports = {
 					accentdark: 'var(--color-accent)',
 					glow: 'var(--color-glow)',
 					accent: 'var(--color-accent-main)',
+					accentMute: 'var(--color-accent-mute)',
 				},
 			},
 			colors: {
 				borderglow: 'var(--color-glow)',
 				bordermain: 'var(--color-accent-main)',
-				circleredglow: '#EF9475',
 				mutedglow: '#454545',
 				mainblack: '#191919',
 				mutedtext: 'var(--color-muted-text)',
-				gamehover: 'var(--color-hover-game)',
-				beerhover: 'var(--color-hover-beer)',
-				pchover: 'var(--color-hover-pc)',
-				musichover: 'var(--color-hover-music)',
-				codehover: 'var(--color-hover-code)',
 			},
 			boxShadow: {
 				'0xl':
