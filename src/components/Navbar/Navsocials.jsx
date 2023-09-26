@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import Git from '../../assets/site-icons/git.png'
 import Download from '../../assets/site-icons/download.png'
 import Linkedin from '../../assets/site-icons/linkedin.png'
-import resume from '../../../public/Resume.pdf'
+import BraydenFriesenResume from '../../../public/Brayden Friesen Resume.pdf'
 
 const wobble = {
 	scale: [1, 1.1, 1.05, 1.1, 1],
@@ -22,7 +22,7 @@ const wobble = {
 const Navsocials = () => {
 	return (
 		<div className='mr-40 flex lg:mr-20  lg:flex'>
-			<a href={resume} download>
+			<a href={BraydenFriesenResume} download>
 				<motion.img
 					className='px-4'
 					whileHover={wobble}
